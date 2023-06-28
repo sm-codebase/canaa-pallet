@@ -2,12 +2,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React, {useState, useEffect} from 'react'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
-import NavLogo from '../public/rubi.svg'
+import NavLogo from '../public/logo.svg'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState('transparent')
-    const [textColor, setTextColor] = useState('red')
+    const [textColor, setTextColor] = useState('green')
 
     const handleNav = () => {
         setNav(!nav)
@@ -30,18 +30,21 @@ const Navbar = () => {
 
   return (
     <div style={{backgroundColor: `${color}`}}className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
-        <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-red-600'>
+        <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-green-700'>
             <Link href='/'>
                 <a>
                     <Image
                         src={NavLogo}
                         alt='/'
-                        width='100'
-                        height='70'
+                        width='170'
+                        height='120'
                         className='cursor-pointer'
                     />
                 </a>
             </Link>
+            <div className='px-10 font-thin leading-3 text-black'>
+                <p>Especialista fabricação de pallets e embalagens de madeira</p>
+            </div>
                 <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
                     <li className='p-4'>
                         <Link href='/'>Home</Link>
@@ -75,9 +78,6 @@ const Navbar = () => {
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
                             <Link href='/facilities'>Facilidades</Link>
-                        </li>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='http://loja.rubihospitalar.com.br/'>Loja Online</Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
                             <Link href='/contact'>Contatos</Link>

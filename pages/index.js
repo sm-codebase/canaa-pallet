@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Rubi Hospitalar</title>
+        <title>Canaã Pallets</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading='Bem vindo a Rubi!' message='Conheça nossos produtos!'/>
