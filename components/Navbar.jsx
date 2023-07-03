@@ -6,7 +6,7 @@ import NavLogo from '../public/logo.svg'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-    const [color, setColor] = useState('transparent')
+    const [color, setColor] = useState('white')
     const [textColor, setTextColor] = useState('green')
 
     const handleNav = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
                 setColor('#ffffff');
                 setTextColor('#000000');
             } else {
-                setColor('transparent');
+                setColor('white');
                 setTextColor('#000000');
             }
         };
@@ -37,7 +37,7 @@ const Navbar = () => {
                         src={NavLogo}
                         alt='/'
                         width='170'
-                        height='120'
+                        height='100'
                         className='cursor-pointer'
                     />
                 </a>

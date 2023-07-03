@@ -1,29 +1,55 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from "next/image";
+import { Carousel } from "react-responsive-carousel";
+import React from "react";
+import SlImgSm1 from "../public/assets/sl-img-1.jpg";
+import SlImg1 from "../public/assets/sl-img-1.jpg";
+import ProdutoImg from "../public/assets/pr-img-1.png";
 
-const Hero = ({heading, message}) => {
+import MainSlider from "./MainSlider";
+
+const Main = () => {
   return (
-    <div id='\' className="w-full h-screen bg-white">
-    <div className= "p-5 mx-auto lg:flex items-stretch justify-evenly">
-      <div className='mt-20 lg:self-center'>
-          <h2 className='text-5xl sm:text-7xl font-black flex  text-transparent bg-clip-text bg-gradient-to-r from-[#BD0000] to-[#770000]'>{heading}</h2>
-          <h2 className='mt-2 text-2xl sm:text-2xl font-black text-left text-transparent bg-clip-text bg-gradient-to-r from-[#BD0000] to-[#770000]'>{message}</h2>
-          <div className='mt-5 grid grid-cols-2 gap-4'>
-            <button className='p-3'>
-              <Link href='https://wa.me/5519996613747'>Fale Agora</Link>
-            </button>
-            <button className='p-3'>
-              <Link href='https://goo.gl/maps/buhLBVJD2zWsmE7v9'>Como chegar</Link>
-            </button>
-          </div>
+    <div id="/" className="">
+      <div className="md:hidden">
+        <div className="pt-10">
+          <Carousel
+            autoPlay={true}
+            showArrows={false}
+            infiniteLoop={true}
+            interval={5000}
+            stopOnHover={false}
+            showThumbs={false}
+            showStatus={false}
+            showIndicators={false}
+            swipeable={false}
+          >
+            <MainSlider sliderImg={SlImgSm1} />
+            <MainSlider sliderImg={SlImgSm1} />
+          </Carousel>
         </div>
-        <div className='mt-10 lg:mt-40 flex lg:justify-end self-center'>
-          <Image src='/assets/background.png' alt='Representante' width={500} height={500}/>
+      </div>
+      <div className="hidden md:block sm:block">
+        <div className="pt-10">
+          <Carousel autoPlay infiniteLoop={true}>
+            <MainSlider sliderImg={SlImg1} />
+            <MainSlider sliderImg={SlImg1} />
+          </Carousel>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="md:px-4 p-4">
+          <Image
+            src={ProdutoImg}
+            alt="/"
+            width={344}
+            height={163}
+            className="cursor-pointer"
+          />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Main;
