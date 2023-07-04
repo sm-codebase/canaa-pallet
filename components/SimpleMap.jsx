@@ -21,8 +21,8 @@ function SimpleMap() {
 
 
   return isLoaded ? (
-    <div className='text-4xl sm:text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-[#BD0000] to-[#770000]'>
-      <h1 className='p-2'>Vem Para Rubi</h1>
+    <div className='text-4xl sm:text-5xl font-black text-center text-green-600'>
+      <h3 className='p-2'>Localização</h3>
 
       <GoogleMap
         mapContainerStyle={containerStyle}

@@ -50,13 +50,13 @@ const Navbar = () => {
                         <Link href='/'>Home</Link>
                     </li>
                     <li className='p-4'>
-                        <Link href='/#focus'>Nosso Foco</Link>
+                        <Link href='/#focus'>Empresa</Link>
                     </li>
                     <li className='p-4'>
-                        <Link href='/facilities'>Facilidades</Link>
+                        <Link href='/facilities'>Embalagens</Link>
                     </li>
                     <li className='p-4'>
-                        <Link href='http://loja.rubihospitalar.com.br/'>Loja Online</Link>
+                        <Link href=''>Divisão Florestal</Link>
                     </li>
                     <li className='p-4'>
                         <Link href='/contact'>Contatos</Link>
@@ -74,10 +74,16 @@ const Navbar = () => {
                             <Link href='/'>Home</Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#focus'>Nosso Foco</Link>
+                            <Link href='/#focus'>Empresa</Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/facilities'>Facilidades</Link>
+                            <Link href='/facilities'>Embalagens</Link>
+                        </li>
+                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+                            <Link href='/facilities'>Divisão Florestal</Link>
+                        </li>
+                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+                            <Link href='/facilities'>Localização</Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
                             <Link href='/contact'>Contatos</Link>

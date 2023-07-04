@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Image from 'next/image';
-import NavLogo from '../public/rubi-white.svg';
+import NavLogo from '../public/white-logo.svg';
 import Link from "next/link";
 
 
@@ -9,7 +9,7 @@ import Link from "next/link";
 function Footer() {
 	return (
 		<>
-			<div className="bg-[#B03638] h-1/2 w-full sm:mt-52 flex md:flex-row flex-col justify-around items-start p-20">
+			<div className="bg-green-700 h-1/2 w-full sm:mt-52 flex md:flex-row flex-col justify-around items-start p-20">
 				<div className="p-5 ">
 					<ul>
 						<a>

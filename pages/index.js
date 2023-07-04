@@ -5,6 +5,7 @@ import Instagram from "../components/Instagram";
 import FaleAgora from "../components/FaleAgora";
 import SimpleMap from "../components/SimpleMap";
 import Empresa from "../components/Empresa";
+import Embalagens from "../components/Embalagens";
 
 export default function Home() {
   return (
@@ -15,8 +16,7 @@ export default function Home() {
       </Head>
       <Hero />
       <Empresa />
-      <FaleAgora heading='Compre agora' message='Fale com nosso time e receba e seu pedido em menos de 24hrs'/>
-      <Instagram />
+      <Embalagens />
       <SimpleMap />
     </div>
   );
