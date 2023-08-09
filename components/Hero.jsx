@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import React from "react";
-import SlImgSm1 from "../public/assets/sl-img-1.jpg";
+import SlImgSm1 from "../public/assets/sl-img-sm-1.png";
 import SlImg1 from "../public/assets/sl-img-1.jpg";
 import ProdutoImg from "../public/assets/pr-img-1.png";
 
@@ -10,7 +10,7 @@ import MainSlider from "./MainSlider";
 
 const Main = () => {
   return (
-    <div id="/" className="">
+    <div id="/" style={{ paddingTop: '80px' }}>
       <div className="md:hidden">
         <div className="pt-10">
           <Carousel
@@ -23,6 +23,7 @@ const Main = () => {
             showStatus={false}
             showIndicators={false}
             swipeable={false}
+            className="carousel-container" // Adicione a classe aqui
           >
             <MainSlider sliderImg={SlImgSm1} />
             <MainSlider sliderImg={SlImgSm1} />
@@ -32,7 +33,7 @@ const Main = () => {
       <div className="hidden md:block sm:block">
         <div className="pt-10">
           <Carousel autoPlay infiniteLoop={true}>
-            <MainSlider sliderImg={SlImg1} />
+            <MainSlider sliderImg={SlImgSm1} />
             <MainSlider sliderImg={SlImg1} />
           </Carousel>
         </div>

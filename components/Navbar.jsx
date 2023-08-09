@@ -42,7 +42,7 @@ const Navbar = () => {
                     />
                 </a>
             </Link>
-            <div className='px-10 font-thin leading-3 text-black'>
+            <div className='px-10 text-xs font-thin leading-4 text-black' style={{ zIndex: 100 }}>
                 <p>Especialista fabricação de pallets e embalagens de madeira</p>
             </div>
                 <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
