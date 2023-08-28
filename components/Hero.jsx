@@ -3,16 +3,19 @@ import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import React from "react";
 import SlImgSm1 from "../public/assets/sl-img-sm-1.png";
-import SlImg1 from "../public/assets/sl-img-1.jpg";
+import SlImgSm2 from "../public/assets/sl-img-sm-1.png";
+import SlImg1 from "../public/assets/sl-img-1.png";
+import SlImg2 from "../public/assets/sl-img-2.png";
 import ProdutoImg from "../public/assets/pr-img-1.png";
 
 import MainSlider from "./MainSlider";
+import Certifications from "./Certifications";
 
 const Main = () => {
   return (
-    <div id="/" style={{ paddingTop: '80px' }}>
+    <div id="/" className="pt-10">
       <div className="md:hidden">
-        <div className="pt-10">
+        <div className="">
           <Carousel
             autoPlay={true}
             showArrows={false}
@@ -23,31 +26,32 @@ const Main = () => {
             showStatus={false}
             showIndicators={false}
             swipeable={false}
-            className="carousel-container" // Adicione a classe aqui
           >
             <MainSlider sliderImg={SlImgSm1} />
-            <MainSlider sliderImg={SlImgSm1} />
+            <MainSlider sliderImg={SlImgSm2} />
           </Carousel>
         </div>
       </div>
       <div className="hidden md:block sm:block">
-        <div className="pt-10">
-          <Carousel autoPlay infiniteLoop={true}>
-            <MainSlider sliderImg={SlImgSm1} />
+        <div className="">
+          <Carousel
+            autoPlay={true}
+            showArrows={false}
+            infiniteLoop={true}
+            interval={5000}
+            stopOnHover={false}
+            showThumbs={false}
+            showStatus={false}
+            showIndicators={false}
+            swipeable={false}
+          >
             <MainSlider sliderImg={SlImg1} />
+            <MainSlider sliderImg={SlImg2} />
           </Carousel>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="md:px-4 p-4">
-          <Image
-            src={ProdutoImg}
-            alt="/"
-            width={344}
-            height={163}
-            className="cursor-pointer"
-          />
-        </div>
+      <div>
+        <Certifications />
       </div>
     </div>
   );

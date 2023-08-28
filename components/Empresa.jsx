@@ -4,10 +4,12 @@ import ProdutoImg from "../public/assets/pr-img-2.png";
 
 const Empresa = () => {
   return (
-    <div id="focus" className="h-full mx-auto text-black">
-      <h1 className="text-4xl font-bold text-left p-4 text-green-700">Empresa</h1>
+    <div id="focus" className="h-full mx-auto text-black p-5">
 
-      <div className="relative flex justify-left p-2">
+      <div className= "">
+      <h1 className="text-3xl font-bold text-green-700 mb-2">Empresa</h1>
+
+      <div className="text-justify">
       <p>
         Especialista fabricação de pallets e embalagens de madeira, Especialista
         fabricação de pallets e embalagens de madeira, Especialista fabricação
@@ -20,8 +22,9 @@ const Empresa = () => {
         embalagens de madeira, Especialista fabricação de pallets e embalagens
         de madeira, Especialista fabricação de pallets e embalagens de madeira,
         Especialista fabricação de pallets e embalagens de madeira, Especialista
-        fabricação de pallets e embalagens de madeira.{" "}
+        fabricação de pallets e embalagens de madeira.
       </p>
+      </div>
       </div>
       <div className="flex flex-wrap items-center pt-4">
         <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto">
