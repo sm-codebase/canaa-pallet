@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import Hero from "../components/Hero";
-import Instagram from "../components/Instagram";
-import FaleAgora from "../components/FaleAgora";
 import SimpleMap from "../components/SimpleMap";
 import Empresa from "../components/Empresa";
-import Embalagens from "../components/Embalagens";
+import Missao from "../components/Missao";
+import Valores from "../components/Valores";
 
 export default function Home() {
   return (
@@ -16,7 +14,8 @@ export default function Home() {
       </Head>
       <Hero />
       <Empresa />
-      <Embalagens />
+      <Missao />
+      <Valores />
       <SimpleMap />
     </div>
   );

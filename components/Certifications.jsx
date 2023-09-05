@@ -11,7 +11,7 @@ const Certifications = () => {
               </h1>
               <div className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-2 gap-y-2 sm:max-w-xl sm:grid-cols-4 sm:gap-x-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                 <Image
-                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-2"
+                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                   src={Cert1}
                   alt="Transistor"
                   width={200}
