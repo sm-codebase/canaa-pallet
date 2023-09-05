@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { FaShoePrints } from "react-icons/fa";
 
 const MainSlider = ({ sliderImg }) => {
   return (
