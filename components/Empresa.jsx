@@ -8,7 +8,7 @@ const Empresa = () => {
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <div>
-            <h1 className="text-3xl font-bold text-green-700 mb-2">
+            <h1 className="text-2xl font-bold text-green-700 mb-2">
               Quem Somos
             </h1>
           </div>
@@ -17,7 +17,6 @@ const Empresa = () => {
             Há 15 anos, a Canaã Pallets tem sido uma referência na fabricação de pallets e embalagens 
             de madeira. Localizada em Mogi Guaçu, São Paulo, nossa empresa está comprometida com a excelência e 
             qualidade de nossos produtos, sempre visando superar as expectativas de nossos clientes.
-
             </p>
           </div>
         </div>

@@ -27,8 +27,8 @@ const Main = () => {
             showIndicators={false}
             swipeable={false}
           >
-            <MainSlider sliderImg={SlImgSm1} />
-            <MainSlider sliderImg={SlImgSm2} />
+            <MainSlider sliderImg={SlImg1} />
+            <MainSlider sliderImg={SlImg2} />
           </Carousel>
         </div>
       </div>

@@ -10,6 +10,7 @@ const MainSlider = ({ sliderImg }) => {
             src={sliderImg}
             alt=""
             height={550}
+            width={1000}
             
             style={{ borderRadius: "15px" }} // Adicione o estilo de borda arredondada
           />

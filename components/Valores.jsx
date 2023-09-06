@@ -7,18 +7,27 @@ import {
   FaEye,
 } from "react-icons/fa";
 
-
 const Valores = () => {
   return (
-    <div id="focus" className="h-full mx-auto bg-green-700 text-white">
-      <h1 className="text-4xl font-bold text-center p-4">Nossos Valores</h1>
-      <h2 className="text-lg text-center p-4">
-        {" "}
-        Integridade, colaboração, empenho, perspectiva, melhoria contínua,
-        inovação e flexibilidade, buscando constantemente superar as
-        expectativas dos clientes e promover a qualidade, sustentabilidade e
-        inovação em suas embalagens de madeira.
-      </h2>
+    <div id="valores" className="container rounded-lg mx-auto bg-green-700 text-white p-5">
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="md:w-1/2">
+          <div>
+            <h1 className="text-2xl font-bold mb-2">
+              Nossos Valores
+              </h1>
+          </div>
+          <div className="text-justify">
+            <p>
+              {" "}
+              Integridade, colaboração, empenho, perspectiva, melhoria contínua,
+              inovação e flexibilidade, buscando constantemente superar as
+              expectativas dos clientes e promover a qualidade, sustentabilidade
+              e inovação em suas embalagens de madeira.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="relative flex justify-center p-4"></div>
 
       <div className="flex flex-wrap items-center pt-0">
@@ -38,8 +47,8 @@ const Valores = () => {
                   </p>
                 </div>
               </a>
-              </div>
-              <div className="my-4 w-full px-4">
+            </div>
+            <div className="my-4 w-full px-4">
               <a>
                 <div className="bg-white shadow-lg rounded-lg p-4 mt-4">
                   <h1 className="text-green-700">
