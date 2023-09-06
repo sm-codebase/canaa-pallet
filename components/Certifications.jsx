@@ -1,43 +1,31 @@
 import React from 'react'
 import Image from 'next/image'
 import Cert1 from '../public/assets/cetifications/iso-9001.png'
+import Cert2 from '../public/assets/cetifications/bureau-veritas.png'
 
 const Certifications = () => {
   return (
-          <div className="p-2">
+          <div className="h-full bg-green-700 p-2">
             <div className="mx-auto">
-              <h1 className="text-center text-2xl font-semibold leading-8 text-green-700">
+              <h1 className="text-center text-2xl font-semibold leading-8 text-white">
                 Nossas certificações
               </h1>
-              <div className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-2 gap-y-2 sm:max-w-xl sm:grid-cols-4 sm:gap-x-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+              <div className="mx-auto mt-2 grid max-w-lg grid-cols-2 items-center gap-x-2 gap-y-2 sm:max-w-xl sm:grid-cols-2 sm:gap-x-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 p-4">
                 <Image
-                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                  className="rounded-full col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                   src={Cert1}
-                  alt="Transistor"
-                  width={200}
+                  alt="iso-9001"
+                  width={100}
                   height={100}
                 />
                 <Image
-                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                  src={Cert1}
-                  alt="Reform"
-                  width={200}
+                  className="rounded-full col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                  src={Cert2}
+                  alt="bureau-veritas"
+                  width={100}
                   height={100}
                 />
-                <Image
-                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                  src={Cert1}
-                  alt="Tuple"
-                  width={200}
-                  height={100}
-                />
-                <Image
-                  className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                  src={Cert1}
-                  alt="SavvyCal"
-                  width={200}
-                  height={100}
-                />
+                
               </div>
             </div>
           </div>

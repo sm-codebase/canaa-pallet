@@ -14,7 +14,7 @@ import Certifications from "./Certifications";
 const Main = () => {
   return (
     <div id="/" className="pt-10">
-      <div className="md:hidden">
+      <div className="">
         <div className="">
           <Carousel
             autoPlay={true}
@@ -32,28 +32,9 @@ const Main = () => {
           </Carousel>
         </div>
       </div>
-      <div className="hidden md:block sm:block">
-        <div className="">
-          <Carousel
-            autoPlay={true}
-            showArrows={false}
-            infiniteLoop={true}
-            interval={8000}
-            stopOnHover={false}
-            showThumbs={false}
-            showStatus={false}
-            showIndicators={false}
-            swipeable={false}
-          >
-            <MainSlider sliderImg={SlImg1} />
-            <MainSlider sliderImg={SlImg2} />
-          </Carousel>
-        </div>
-      </div>
-      <div>
         <Certifications />
       </div>
-    </div>
+   
   );
 };
 

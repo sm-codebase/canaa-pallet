@@ -10,7 +10,7 @@ body {
 
 
 button {
-  @apply rounded-xl uppercase bg-gradient-to-r from-[#770000] to-[#BD0000] text-white
+  @apply rounded-xl uppercase bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white
 }
 
 .carousel-container {
