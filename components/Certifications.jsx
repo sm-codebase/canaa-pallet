@@ -10,7 +10,7 @@ const Certifications = () => {
               <h1 className="text-center text-2xl font-semibold leading-8 text-white">
                 Nossas certificações
               </h1>
-              <div className="mx-auto mt-2 grid max-w-lg grid-cols-2 items-center gap-x-2 gap-y-2 sm:max-w-xl sm:grid-cols-2 sm:gap-x-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 p-4">
+              <div className="mx-auto mt-2 grid max-w-lg grid-cols-2 justify-items-center gap-x-2 gap-y-2 sm:max-w-xl sm:grid-cols-2 sm:gap-x-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 p-4">
                 <Image
                   className="rounded-full col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                   src={Cert1}

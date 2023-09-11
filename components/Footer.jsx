@@ -60,7 +60,7 @@ function Footer() {
 			</div>
 			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
 				<h3 className=" text-gray-800 font-semibold">
-					© 2022 Todos os direitos reservados | Desenvolvido ❤ pela{" "}
+					© 2023 Todos os direitos reservados | Desenvolvido ❤ pela{" "}
 					<span className="hover:text-red-600 font-semibold cursor-pointer">
 						Sousas Midia{" "}
 					</span>

@@ -4,7 +4,7 @@ import ProdutoImg from "../public/assets/empresa.png";
 
 const Empresa = () => {
   return (
-    <div id="missao" className="container mx-auto text-black p-5">
+    <div id="empresa" className="container mx-auto text-black p-5">
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <div>
@@ -14,9 +14,11 @@ const Empresa = () => {
           </div>
           <div className="text-justify">
             <p>
-            Há 15 anos, a Canaã Pallets tem sido uma referência na fabricação de pallets e embalagens 
-            de madeira. Localizada em Mogi Guaçu, São Paulo, nossa empresa está comprometida com a excelência e 
-            qualidade de nossos produtos, sempre visando superar as expectativas de nossos clientes.
+              Há 15 anos, a Canaã Pallets tem sido uma referência na fabricação
+              de pallets e embalagens de madeira. Localizada em Mogi Guaçu, São
+              Paulo, nossa empresa está comprometida com a excelência e
+              qualidade de nossos produtos, sempre visando superar as
+              expectativas de nossos clientes.
             </p>
           </div>
         </div>
@@ -36,4 +38,3 @@ const Empresa = () => {
 };
 
 export default Empresa;
-

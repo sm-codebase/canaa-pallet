@@ -52,13 +52,16 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="p-4">
-            <Link href="/#focus">Empresa</Link>
+            <Link href="/#empresa">Empresa</Link>
           </li>
           <li className="p-4">
-            <Link href="/facilities">Embalagens</Link>
+            <Link href="/#missao">Missão</Link>
           </li>
           <li className="p-4">
-            <Link href="">Divisão Florestal</Link>
+            <Link href="/#valores">Nossos valores</Link>
+          </li>
+          <li className="p-4">
+            <Link href="/#localizacao">Localização</Link>
           </li>
           <li className="p-4">
             <Link href="/contact">Contatos</Link>
@@ -92,25 +95,25 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/#focus">Empresa</Link>
+              <Link href="/#empresa">Empresa</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/facilities">Embalagens</Link>
+              <Link href="/#missao">Missão</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/facilities">Divisão Florestal</Link>
+              <Link href="/#valores">Nossos valores</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/facilities">Localização</Link>
+              <Link href="/#localizacao">Localização</Link>
             </li>
             <li
               onClick={handleNav}
