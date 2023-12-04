@@ -3,9 +3,9 @@ import React from "react";
 
 const MainSlider = ({ sliderImg }) => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 carousel-slide md:pt-1">
       <div>
-        <div className="carousel-slide md:pt-5">
+        <div >
           <Image
             src={sliderImg}
             alt=""

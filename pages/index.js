@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Hero from "../components/Hero";
+import Main from "../components/Main";
 import SimpleMap from "../components/SimpleMap";
 import Empresa from "../components/Empresa";
 import Missao from "../components/Missao";
@@ -12,7 +12,7 @@ export default function Home() {
         <title>Canaã Pallets</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
+      <Main />
       <Empresa />
       <Missao />
       <Valores />
