@@ -8,6 +8,7 @@ import {
 import Image from "next/image";
 import NavLogo from "../public/white-logo.svg";
 import Link from "next/link";
+
 function Footer() {
   return (
     <div>
@@ -21,7 +22,7 @@ function Footer() {
                 width="170"
                 height="70"
                 className="cursor-pointer"
-              
+              />
             </a>
             <div className="flex justify-center gap-6 pb-5">
               <Link href="https://www.instagram.com/canaapallets/tagged/">
@@ -55,36 +56,34 @@ function Footer() {
           <ul>
             <p className="text-white font-bold text-2xl pb-4">Sobre nós</p>
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-              <Link href="/#empresa">Quem Somos </Link>
+              <Link href="/#about">Quem Somos </Link>
             </li>
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-              <Link href="/#valores">Nossos Valores</Link>
+              <Link href="/gallery">Nossos Serviços</Link>
             </li>
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
               <Link href="/#projects">Clientes</Link>
             </li>
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-              <Link href="/#fale-agora">Fale Agora </Link>
+              <Link href="/#contact">Contato </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">                                      
-        <link href="https://www.linkedin.com/company/canaapallets">
-          <a target="_blank" rel="noopener noreferrer">
-            <h3 className=" text-gray-800 font-semibold" / >© 2023 Todos os
-            direitos reservados | Desenvolvido ❤ pela{" "}
-            <span className="hover:text-red-600 font-semibold cursor-pointer" />
-            Sousas Midia{" "}
-          </a>
-        </link>
-        
+      <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
+        <h3 className=" text-gray-800 font-semibold">
+          © 2023 Todos os direitos reservados | Desenvolvido ❤ pela{" "}
+          <span className="hover:text-red-600 font-semibold cursor-pointer">
+            <Link href="https://www.sousasmidia.com.br/">
+              <a target="_blank" rel="noopener noreferrer">
+                Sousas Midia
+              </a>
+            </Link>
+          </span>
+        </h3>
       </div>
-      </div>
-    
-      
-  
-    
+    </div>
   );
-};
+}
+
 export default Footer;
