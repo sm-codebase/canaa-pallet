@@ -1,25 +1,23 @@
 import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-import slimg1 from "../public/assets/carousel/pr-img-1.png";
-import slimg2 from "../public/assets/carousel/pr-img-2.png";
-import slimg3 from "../public/assets/carousel/pr-img-3.png";
-import slimg4 from "../public/assets/carousel/pr-img-4.png";
 
 
-function App() {
+
+
+function Carousel() {
   const slides = [
     {
-      image: slimg1,
+       url: 'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
-      image: slimg2,
+        url: 'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=600',
     },
     {
-      image: slimg3,
+        url: 'https://images.pexels.com/photos/13009437/pexels-photo-13009437.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
-      image: slimg4,
+        url: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=600'
     },
     
   ];
@@ -45,7 +43,7 @@ function App() {
   return (
     <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow*/}
@@ -76,4 +74,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Carousel;
