@@ -1,28 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-
-
-
 
 function Carousel() {
   const slides = [
     {
-       url: 'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600'
+      url: 'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
-        url: 'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=600',
+      url: 'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=600',
     },
     {
-        url: 'https://images.pexels.com/photos/13009437/pexels-photo-13009437.jpeg?auto=compress&cs=tinysrgb&w=600'
+      url: 'https://images.pexels.com/photos/13009437/pexels-photo-13009437.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
-        url: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=600'
+      url: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=600'
     },
-    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -40,11 +37,30 @@ function Carousel() {
     setCurrentIndex(slideIndex);
   };
 
+  useEffect(() => {
+    let intervalId;
+
+    if (!isHovered) {
+      // Auto-scroll every 5 seconds (adjust the interval as needed)
+      intervalId = setInterval(() => {
+        nextSlide();
+      }, 5000);
+    }
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [isHovered, currentIndex]);
+
   return (
-    <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
+    <div
+      className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full mt-11 rounded-2xl bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow*/}
       <div
@@ -74,4 +90,5 @@ function Carousel() {
     </div>
   );
 }
+
 export default Carousel;
