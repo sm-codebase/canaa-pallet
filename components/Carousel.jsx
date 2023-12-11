@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-import slimg2 from "../public/assets/carousel/pr-img-2.png";
-
 
 function Carousel() {
   const slides = [
     {
-      image: slimg2
+      url: 'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       url: 'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=600',
@@ -56,12 +54,12 @@ function Carousel() {
 
   return (
     <div
-      className="max-w-[1080px] h-[720px] w-full m-auto py-16 px-4 relative group"
+      className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full mt-11 rounded-2xl bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow*/}
