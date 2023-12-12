@@ -19,7 +19,7 @@ const Certifications = () => {
                   height={100}
                 />
                 <Image
-                  className="rounded-full col-span-2 max-h-2 w-full object-contain lg:col-span-1"
+                  className="rounded-full col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                   src={Cert2}
                   alt="bureau-veritas"
                   width={100}

@@ -37,12 +37,6 @@ function Footer() {
                 </a>
               </Link>
 
-              <Link href="https://www.youtube.com/">
-                <a target="_blank" rel="noopener noreferrer">
-                  <FaWhatsapp className="text-2xl text-white cursor-pointer hover:text-gray-300" />
-                </a>
-              </Link>
-
               <Link href="https://www.linkedin.com/company/canaapallets">
                 <a target="_blank" rel="noopener noreferrer">
                   <FaLinkedin className="text-2xl text-white cursor-pointer hover:text-gray-300" />
