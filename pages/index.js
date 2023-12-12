@@ -6,6 +6,7 @@ import Empresa from "../components/Empresa";
 import Missao from "../components/Missao";
 import Valores from "../components/Valores";
 
+ 
 export default function Home() {
   return (
     <div>
@@ -19,6 +20,7 @@ export default function Home() {
       <Missao />
       <Valores />
       <SimpleMap />
+      
     </div>
   );
 }

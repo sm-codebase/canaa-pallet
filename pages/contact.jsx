@@ -7,6 +7,7 @@ const contact = () => {
     <div>
         <Hero heading='Fale conosoco' message='Preecha o formulario abaixo para que nossa equipe possa retornar o seu contato.' />
         <Contact />
+       
     </div>
   )
 }

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import NavLogo from "../public/logo.svg";
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("white");
@@ -64,10 +65,10 @@ const Navbar = () => {
             <Link href="/#localizacao">Localização</Link>
           </li>
           <li className="p-4">
-            <Link href="/contact">Contatos</Link>
+            <Link href="/#contact">Contatos</Link>
           </li>
         </ul>
-
+        
         {/*Mobile button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
           {nav ? (
@@ -119,7 +120,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/contact">Contatos</Link>
+              <Link href="/#contact">Contatos</Link>
             </li>
           </ul>
         </div>
