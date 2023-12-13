@@ -10,7 +10,7 @@ const Contact = () => {
          method='POST'
          encType='multipart/form-data'
         >
-            <div className='grid grid-cols-3 gap-2'>
+            <div className='grid grid-cols-2 gap-2 '>
                 <input 
                  className='border shadow-lg p-3' 
                  type="text" 
