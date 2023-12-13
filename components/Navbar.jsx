@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      className="fixed h-[95px] left- top-0 w-full z-10 ease-in duration-300"
     >
       <div className="max-w-[1240p] m-auto flex justify-between items-center p-4 text-green-700">
         <Link href="/">
@@ -39,12 +39,12 @@ const Navbar = () => {
               src={NavLogo}
               alt="/"
               width="170"
-              height="70"
+              height="50"
               className="cursor-pointer"
             />
           </a>
         </Link>
-        <div className="px-10 md:text-base text-xs font-thin leading-4 text-black">
+        <div className="px-10 md:text-base text-lg font-thin leading-4  text-green-700">
             <p>Especialista fabricação de pallets e embalagens de madeira</p>
         </div>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link href="/#localizacao">Localização</Link>
           </li>
           <li className="p-4">
-            <Link href="/contact">Contatos</Link>
+            <Link href="/contact">Contato</Link>
           </li>
         </ul>
 
