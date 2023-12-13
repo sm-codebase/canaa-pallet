@@ -5,12 +5,12 @@ const Contact = () => {
     <div className='maxx-w[1240px] m-auto p-4 h-screen'>
         <h1 className='text-2xl font-bold text-center p-4'>Seja nosso cliente</h1>
         <form 
-         className='max-w-[600px] m-auto'
-         action='https://getform.io/f/9c45e5f1-1abd-467e-b9ad-412f459d47a4'
+         className='max-w-[600px] m-auto mt-5'
+         action='https://getform.io/f/e27122d0-21c4-4930-8a9d-37c17244c7c7'
          method='POST'
          encType='multipart/form-data'
         >
-            <div className='grid grid-cols-2 gap-2'>
+            <div className='grid grid-cols-3 gap-2'>
                 <input 
                  className='border shadow-lg p-3' 
                  type="text" 

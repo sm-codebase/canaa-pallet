@@ -44,7 +44,7 @@ const Navbar = () => {
             />
           </a>
         </Link>
-        <div className="px-10 md:text-base text-lg font-thin leading-4  text-green-700">
+        <div className="px-10 md:text-base text-lg font-thin leading-4 hidden sm:flex text-green-700">
             <p>Especialista fabricação de pallets e embalagens de madeira</p>
         </div>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
