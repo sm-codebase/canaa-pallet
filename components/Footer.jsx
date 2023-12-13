@@ -12,7 +12,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <div>
-      <div className="bg-green-700 h-1/2 w-full sm:mt-1 flex md:flex-row flex-col justify-around items-start p-20">
+      <div className="bg-green-700 h-1/2 w-full sm:mt- flex md:flex-row flex-col justify-around items-start p-20">
         <div className="p-5 ">
           <ul>
             <a>
