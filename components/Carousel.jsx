@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-import primg5 from "../public/assets/carousel/pr-img-5.jpg";
-import primg6 from "../public/assets/carousel/pr-img-6.jpg";
-import primg7 from "../public/assets/carousel/pr-img-7.jpg";
-import primg8 from "../public/assets/carousel/pr-img-8.jpg";
+import primg1 from "../public/assets/carousel/pr-img-1.jpg";
+import primg2 from "../public/assets/carousel/pr-img-2.jpg";
+import primg3 from "../public/assets/carousel/pr-img-3.jpg";
+import primg4 from "../public/assets/carousel/pr-img-4.jpg";
 
 const slides = [
-  { id: 1, src: primg5, alt: "Image 1", text: "Os pallets são versáteis, sendo usados na logística e no design de móveis sustentáveis. Sua estrutura simples permite reutilização criativa, promovendo soluções econômicas e ecológicas." },
-  { id: 2, src: primg6, alt: "Image 2", text: "Os pallets, feitos com madeira ou plástico, são peças fundamentais na cadeia de suprimentos, facilitando o transporte e armazenamento de cargas de forma eficiente." },
-  { id: 3, src: primg7, alt: "Image 3", text: "Além de seu uso tradicional na indústria, os pallets ganharam popularidade como base para criação de móveis, estimulando a criatividade e a sustentabilidade no design de interiores." },
-  { id: 4, src: primg8, alt: "Image 4", text: "A reutilização de pallets em projetos DIY (faça você mesmo) oferece uma oportunidade única de criar objetos únicos e personalizados, agregando valor estético e ambiental às criações." },
+  { id: 1, src: primg1, alt: "Image 1", text: "Procurando por soluções sustentáveis em embalagens e pallets?" },
+  { id: 2, src: primg2, alt: "Image 2", text: "Na Canaã Pallets, comprometemo-nos a oferecer embalagens e pallets provenientes de fontes de reflorestamento, promovendo a sustentabilidade e a preservação do nosso planeta." },
+  { id: 3, src: primg3, alt: "Image 3", text: "Na Canaã Pallets, sustentabilidade e qualidade andam juntas, oferecendo soluções de madeira certificada pela ISO, sob medida para suas necessidades industriais." },
+  { id: 4, src: primg4, alt: "Image 4", text: "Na Canaã Pallets, optamos pela energia solar, reduzindo emissões de gases de efeito estufa, contribuindo para um futuro mais sustentável." },
 ];
 
 function Carousel() {
@@ -56,7 +56,7 @@ function Carousel() {
       onMouseLeave={() => setIsHovered(false)}
       >
       <div className="w-full h-full mt-24 bg-center bg-cover duration-500">
-        <Image className="rounded-2xl"
+        <Image className="rounded-2xl opacity-50"
           src={slides[currentIndex].src}
           alt={`Slide ${slides[currentIndex].id}`}
           layout="fill"
@@ -64,7 +64,7 @@ function Carousel() {
           priority // Add the priority property
         />
         
-        <div className="absolute inset-10 flex items-end justify-center text-white text-2xl font-bold">
+        <div className="absolute inset-10 flex items-end justify-center text-green-800 text-2xl font-serif text-center font-bold">
           {slides[currentIndex].text}
         </div>
         </div>
