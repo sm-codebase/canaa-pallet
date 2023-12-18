@@ -8,12 +8,41 @@ import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 import primg4 from "../public/assets/carousel/pr-img-4.jpg";
 
 const slides = [
-  { id: 1, src: primg1, alt: "Image 1", text: "Procurando por soluções sustentáveis em embalagens e pallets?" },
-  { id: 2, src: primg2, alt: "Image 2", text: "Na Canaã Pallets, comprometemo-nos a oferecer embalagens e pallets provenientes de fontes de reflorestamento, promovendo a sustentabilidade e a preservação do nosso planeta." },
-  { id: 3, src: primg3, alt: "Image 3", text: "Na Canaã Pallets, sustentabilidade e qualidade andam juntas, oferecendo soluções de madeira certificada pela ISO, sob medida para suas necessidades industriais." },
-  { id: 4, src: primg4, alt: "Image 4", text: "Na Canaã Pallets, optamos pela energia solar, reduzindo emissões de gases de efeito estufa, contribuindo para um futuro mais sustentável." },
+  {
+    id: 1,
+    src: primg1,
+    alt: "Image 1",
+    summary:
+      "Os pallets são versáteis, sendo usados na logística e no design de móveis sustentáveis.",
+    description:
+      "Sua estrutura simples permite reutilização criativa, promovendo soluções econômicas e ecológicas.",
+  },
+  {
+    id: 2,
+    src: primg2,
+    alt: "Image 2",
+    summary: "Os pallets, feitos com madeira ou plástico",
+    description:
+      "Peças fundamentais na cadeia de suprimentos, facilitando o transporte e armazenamento de cargas de forma eficiente.",
+  },
+  {
+    id: 3,
+    src: primg3,
+    alt: "Image 3",
+    summary:
+      "Além de seu uso tradicional na indústria, os pallets ganharam popularidade como base para criação de móveis",
+    description:
+      "Estimulando a criatividade e a sustentabilidade no design de interiores.",
+  },
+  {
+    id: 4,
+    src: primg4,
+    alt: "Image 4",
+    summary:
+      "A reutilização de pallets em projetos DIY (faça você mesmo) oferece uma oportunidade única de criar objetos únicos e personalizados",
+    description: "agregando valor estético e ambiental às criações.",
+  },
 ];
-
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -41,7 +70,7 @@ function Carousel() {
       // Auto-scroll every 5 seconds (adjust the interval as needed)
       intervalId = setInterval(() => {
         nextSlide();
-      }, 5000);
+      }, 10000);
     }
 
     return () => {
@@ -54,20 +83,25 @@ function Carousel() {
       className="max-w-[1200px] h-[560px] w-full m-auto py- px-4  relative group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      >
-      <div className="w-full h-full mt-24 bg-center bg-cover duration-500">
-        <Image className="rounded-2xl opacity-50"
+    >
+      <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity">
+        <Image
+          className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-95"
           src={slides[currentIndex].src}
           alt={`Slide ${slides[currentIndex].id}`}
           layout="fill"
           objectFit="cover"
           priority // Add the priority property
         />
-        
-        <div className="absolute inset-10 flex items-end justify-center text-green-800 text-2xl font-serif text-center font-bold">
-          {slides[currentIndex].text}
+
+        <div className="absolute inset-10 mt-10 text-green-900 text-2xl font-serif font-bold animate-fade-in drop-shadow-lg">
+          
+          <h1 className="text-4xl uppercase bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-green-900 drop-shadow-2xl">
+            {slides[currentIndex].summary}
+          </h1>
+          <p className="text-gray-600">{slides[currentIndex].description}</p>
         </div>
-        </div>
+      </div>
 
       {/* Left Arrow*/}
       <div
