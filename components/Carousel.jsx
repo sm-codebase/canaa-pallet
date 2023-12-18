@@ -86,7 +86,7 @@ function Carousel() {
     >
       <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity">
         <Image
-          className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-95"
+          className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-40"
           src={slides[currentIndex].src}
           alt={`Slide ${slides[currentIndex].id}`}
           layout="fill"
@@ -94,9 +94,9 @@ function Carousel() {
           priority // Add the priority property
         />
 
-        <div className="absolute inset-10 mt-10 text-green-900 text-2xl font-serif font-bold animate-fade-in drop-shadow-lg">
+        <div className="absolute inset-3 pt-12 text-green-900 text-2xl font-serif font-bold text-left animate-fade-in drop-shadow-lg">
           
-          <h1 className="text-4xl uppercase bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-green-900 drop-shadow-2xl">
+          <h1 className="text-3xl uppercase bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-green-900 drop-shadow-2xl">
             {slides[currentIndex].summary}
           </h1>
           <p className="text-gray-600">{slides[currentIndex].description}</p>
