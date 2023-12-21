@@ -13,35 +13,34 @@ const slides = [
     id: 1,
     src: primg1,
     alt: "Image 1",
-    summary:
-      "Os pallets são versáteis, sendo usados na logística e no design de móveis sustentáveis.",
+    summary: "Sustentabilidade e qualidade caminham lado a lado",
     description:
-      "Sua estrutura simples permite reutilização criativa, promovendo soluções econômicas e ecológicas.",
+      "Fabricamos produtos e embalagens de madeira com a certificação ISO, garantindo que cada peça seja ecologicamente responsável e ideal para necessidades industriais. ",
   },
   {
     id: 2,
     src: primg2,
     alt: "Image 2",
-    summary: "Os pallets, feitos com madeira ou plástico",
+    summary: "Embalagens sob medida",
     description:
-      "Peças fundamentais na cadeia de suprimentos, facilitando o transporte e armazenamento de cargas de forma eficiente.",
+      "Nossa abordagem personalizada assegura que cada embalagem seja projetada com precisão, garantindo a proteção ideal para seus produtos durante o transporte e armazenamento. Ao optar por nossas embalagens sob medida, você está escolhendo a excelência em design e funcionalidade para atender aos requisitos únicos do seu setor.",
   },
   {
     id: 3,
     src: primg3,
     alt: "Image 3",
-    summary:
-      "Além de seu uso tradicional na indústria, os pallets ganharam popularidade como base para criação de móveis",
+    summary: "Estamos comprometidos com um futuro sustentável",
     description:
-      "Estimulando a criatividade e a sustentabilidade no design de interiores.",
+      "Utilizando 100% de energia proveniente do sol. Ao nos escolher, você apoia um futuro mais limpo e sustentável.",
   },
   {
     id: 4,
     src: primg4,
     alt: "Image 4",
     summary:
-      "A reutilização de pallets em projetos DIY (faça você mesmo) oferece uma oportunidade única de criar objetos únicos e personalizados",
-    description: "agregando valor estético e ambiental às criações.",
+      "Compromisso com o futuro! Todas as nossas embalagens e produtos de madeira vêm de fontes de reflorestamento.",
+    description:
+      "Canaã Pallets, cada produto conta uma história de responsabilidade ambiental. Nossas embalagens e pallets são frutos de florestas geridas de forma sustentável, garantindo o equilíbrio do nosso ecossistema. Escolha parceiros que, como nós, colocam o planeta em primeiro lugar.",
   },
 ];
 function Carousel() {
@@ -95,20 +94,18 @@ function Carousel() {
           priority // Add the priority property
         />
 
-        <div className="absolute py-40 px-3 font-bold text-center animate-fade-in drop-shadow-lg">
-          
-          <h1 className="text-3xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-100 to-green-100 drop-shadow-2xl">
-            {slides[currentIndex].summary}
-          </h1>
-          <p className="text-white py-4">{slides[currentIndex].description}</p>
+        <div className="absolute px-4 flex items-center justify-center font-bold text-center animate-fade-in drop-shadow-lg h-full w-full">
+          <div>
+            <h1 className="text-3xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
+              {slides[currentIndex].summary}
+            </h1>
+            <p className="text-white py-4">
+              {slides[currentIndex].description}
+            </p>
+          </div>
         </div>
         <div className="absolute bottom-5 grid justify-items-center w-full">
-          <Image
-          src={Logo}
-          alt="logo-branco"
-          height={38.5}
-          width={116.6}
-          />
+          <Image src={Logo} alt="logo-branco" height={38.5} width={116.6} />
         </div>
       </div>
 
