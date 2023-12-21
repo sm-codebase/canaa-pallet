@@ -6,6 +6,7 @@ import primg1 from "../public/assets/carousel/pr-img-1.jpg";
 import primg2 from "../public/assets/carousel/pr-img-2.jpg";
 import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 import primg4 from "../public/assets/carousel/pr-img-4.jpg";
+import Logo from "../public/assets/carousel/logo.png";
 
 const slides = [
   {
@@ -84,9 +85,9 @@ function Carousel() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity">
+      <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-green-900 to-green-700">
         <Image
-          className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-40"
+          className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-30"
           src={slides[currentIndex].src}
           alt={`Slide ${slides[currentIndex].id}`}
           layout="fill"
@@ -94,12 +95,20 @@ function Carousel() {
           priority // Add the priority property
         />
 
-        <div className="absolute inset-3 pt-12 text-green-900 text-2xl font-serif font-bold text-left animate-fade-in drop-shadow-lg">
+        <div className="absolute py-40 px-3 font-bold text-center animate-fade-in drop-shadow-lg">
           
-          <h1 className="text-3xl uppercase bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-green-900 drop-shadow-2xl">
+          <h1 className="text-3xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-100 to-green-100 drop-shadow-2xl">
             {slides[currentIndex].summary}
           </h1>
-          <p className="text-gray-600">{slides[currentIndex].description}</p>
+          <p className="text-white py-4">{slides[currentIndex].description}</p>
+        </div>
+        <div className="absolute bottom-5 grid justify-items-center w-full">
+          <Image
+          src={Logo}
+          alt="logo-branco"
+          height={38.5}
+          width={116.6}
+          />
         </div>
       </div>
 
