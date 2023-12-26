@@ -1,5 +1,12 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import { Loader } from '@googlemaps/js-api-loader';
+
+const loader = new Loader({
+  apiKey: "AIzaSyAuwt2OGN57-n7FoD4aRP_orDI5XAS02t8",
+  version: "weekly",
+  libraries: ["places"]
+});
 
 const containerStyle = {
   width: "100vw",
@@ -7,14 +14,15 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -22.36547194149674,
-  lng: -46.94303070225753,
+   
+  lat: -22.323561,
+  lng: -46.923978,
 };
 
 function SimpleMap() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyBhbEXhbkeKjLuTctO_qscFo1WWSAmmjmw",
+    googleMapsApiKey: "AIzaSyAuwt2OGN57-n7FoD4aRP_orDI5XAS02t8",
   });
 
   const [map, setMap] = React.useState(null);
