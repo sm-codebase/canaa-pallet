@@ -88,7 +88,7 @@ function Carousel() {
           <div
             key={slide.id}
             onClick={() => goToSlide(slide.id - 1)}
-            className="test-2xl cursor-pointer"
+            className="text-lg cursor-pointer"
           >
             <RxDotFilled />
           </div>
