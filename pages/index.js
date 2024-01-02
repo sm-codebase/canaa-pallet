@@ -20,6 +20,7 @@ export default function Home() {
       <Missao />
       <Valores />
       <SimpleMap />
+    
       
     </div>
   );

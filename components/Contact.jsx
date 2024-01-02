@@ -2,8 +2,9 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='maxx-w[1240px] m-auto p-4 h-screen'>
+    <div className='maxx-w[1240px] m-auto p-20 h-screen'>
         <h1 className='text-2xl font-bold text-center p-4'>Seja nosso cliente</h1>
+        
         <form 
          className='max-w-[600px] m-auto mt-5'
          action='https://getform.io/f/e27122d0-21c4-4930-8a9d-37c17244c7c7'

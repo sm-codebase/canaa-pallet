@@ -66,6 +66,9 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/contact">Contato</Link>
           </li>
+          <li className="p-4">
+            <Link href="/trabalheconosco">Trabalhe Conosco</Link>
+          </li> 
         </ul>
 
         {/*Mobile button */}
@@ -120,6 +123,12 @@ const Navbar = () => {
               className="p-4 text-4xl hover:text-gray-500"
             >
               <Link href="/contact">Contatos</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl hover:text-gray-500"
+            >
+              <Link href="/trabalheconosco">Trabalhe Conosco</Link>
             </li>
           </ul>
         </div>
