@@ -1,40 +1,46 @@
 import React from "react";
+import ProdutoImg from "../public/assets/empresa-1.jpg";
 import Image from "next/image";
-import ProdutoImg from "../public/assets/empresa.png";
 
-const Empresa = () => {
+export default function Empresa() {
   return (
-    <div id="empresa" className="container mx-auto text-black p-5">
-      <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2">
-          <div>
-            <h1 className="text-2xl font-bold text-green-700 mb-2">
-              Quem Somos
-            </h1>
-          </div>
-          <div className="text-justify">
-            <p>
-              Há 15 anos, a Canaã Pallets tem sido uma referência na fabricação
-              de pallets e embalagens de madeira. Localizada em Mogi Guaçu, São
-              Paulo, nossa empresa está comprometida com a excelência e
-              qualidade de nossos produtos, sempre visando superar as
-              expectativas de nossos clientes.
-            </p>
-          </div>
-        </div>
-        <div className="py-2 px-10 md:w-1/2 md:pr-5">
-          <Image
-            src={ProdutoImg}
-            alt="/"
-            height={300}
-            width={500}
-            className="cursor-pointer"
-            style={{ borderRadius: "15px" }}
-          />
+    <div id="quemsomos" className=" ">
+      <div>
+        <Image
+         src={ProdutoImg} 
+         alt="/" 
+         width={0} 
+         height={1500} 
+         className="opacity- cursor-pointer"
+         />
+      </div>
+
+      <div className="p-20">
+        <h2 className=" font-sans text-4xl">Empresa</h2>
+        <div className="text-2xl font-sans mt-5">
+          Há 15 anos, a Canaã Pallets é referência na fabricação de pallets e
+          embalagens de madeira, situada em Mogi Guaçu, São Paulo. Comprometida
+          com a excelência e qualidade, buscamos constantemente superar as
+          expectativas dos clientes. Nossa trajetória é marcada por
+          investimentos em tecnologia e uma equipe altamente qualificada,
+          permitindo oferecer soluções personalizadas e produtos duráveis.
+          Reconhecidos pela resistência, nossos pallets utilizam madeira de
+          fontes sustentáveis, reforçando nosso compromisso ambiental. A
+          conformidade com normas e regulamentações, aliada à atenção às
+          demandas do mercado, assegura a qualidade e segurança de nossos
+          produtos. Priorizando a satisfação do cliente, a Canaã Pallets
+          constrói parcerias duradouras, destacando-se pelo atendimento
+          personalizado e compreensão das necessidades individuais. Nosso
+          compromisso não se limita à produção, estendendo-se à responsabilidade
+          social. Participamos ativamente de iniciativas comunitárias,
+          contribuindo para o desenvolvimento sustentável da região. Em 15 anos,
+          superamos desafios, celebramos conquistas e construímos uma história
+          de crescimento. A Canaã Pallets é mais que uma empresa, é um símbolo
+          de comprometimento, qualidade e confiança. Agradecemos a clientes,
+          colaboradores e parceiros, reafirmando nosso compromisso de continuar
+          oferecendo produtos que superem expectativas.
         </div>
       </div>
     </div>
   );
-};
-
-export default Empresa;
+}

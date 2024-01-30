@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const Contact = () => {
   return (
-    <div className='maxx-w[1240px] m-auto p-20 h-screen'>
+    <div className='maxx-w[1240px] m-auto mt-20 '>
         <h1 className='text-2xl font-bold text-center p-4'>Seja nosso cliente</h1>
         
         <form 

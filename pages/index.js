@@ -2,7 +2,7 @@ import Head from "next/head";
 import Carousel from "../components/Carousel";
 import Certifications from "../components/Certifications";
 import SimpleMap from "../components/SimpleMap";
-import Empresa from "../components/Empresa";
+import QuemSomos from "../components/QuemSomos";
 import Missao from "../components/Missao";
 import Valores from "../components/Valores";
 
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <Carousel />
       <Certifications />
-      <Empresa />
+      <QuemSomos />
       <Missao />
       <Valores />
       <SimpleMap />
