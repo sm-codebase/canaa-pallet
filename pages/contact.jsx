@@ -1,11 +1,11 @@
 import React from "react";
-import Contact from "../components/Contact";
 import SimpleMap from "../components/SimpleMap";
+import Form from "../components/Form";
 
 const contact = () => {
   return (
     <div>
-      <Contact />
+      <Form/>
       <SimpleMap />
     </div>
   );

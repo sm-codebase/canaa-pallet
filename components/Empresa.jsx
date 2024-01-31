@@ -7,14 +7,14 @@ export default function Empresa() {
     <div id="quemsomos" className="mt-24">
 
       
-      <div className="">
+      <div className="duration-500 relative transition-opacity bg-gradient-to-r from-green-900 to-green-600 rounded-xl">
         <Image
          src={ProdutoImg} 
          alt="/" 
          width={0} 
-         height={1500} 
-         className="cursor-pointer"  
-         style={{ borderRadius: "15px" }}
+         height={800} 
+         className="cursor-pointer opacity-30 transition-opacity duration-500 group-hover:opacity-30"  
+     
          />
       </div>
 

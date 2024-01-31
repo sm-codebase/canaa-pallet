@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function NossosValores() {
   return (
     <div id="quemsomos" className="mt-24 ">
-      <div>
+      <div className="duration-500 relative transition-opacity bg-gradient-to-r from-green-900 to-green-700 rounded-xl">
         <Image
         src={ProdutoImg} 
         alt="/" 
         width={0} 
-        height={1500} 
-        className="cursor-pointer"    
+        height={900} 
+        className="cursor-pointer opacity-30 transition-opacity duration-500 group-hover:opacity-30"    
         style={{ borderRadius: "15px" }}
        
         />

@@ -5,16 +5,15 @@ import Image from "next/image";
 export default function Compromisso() {
   return (
     <div id="quemsomos" className="mt-24">
-      <div className="">
+      <div className="duration-500 relative transition-opacity bg-gradient-to-r from-green-900 to-green-700 rounded-xl">
         <Image
           src={ProdutoImg}
           alt="/"
           width={0}
-          height={800}
-          className="cursor-pointer rounded-lg"
+          height={500}
+          className="cursor-pointer opacity-30 transition-opacity duration-500 group-hover:opacity-30"
           layout="responsive"
-        
-          
+          style={{ borderRadius: "15px" }}
         />
       </div>
 
