@@ -25,7 +25,7 @@ function Footer() {
               />
             </a>
             <div className="flex justify-center gap-6 pb-5">
-              <Link href="https://www.instagram.com/canaapallets/tagged/">
+              <Link href="https://www.instagram.com/canaa.pallets">
                 <a target="_blank" rel="noopener noreferrer">
                   <FaInstagram className="text-2xl text-white cursor-pointer hover:text-gray-300" />
                 </a>
