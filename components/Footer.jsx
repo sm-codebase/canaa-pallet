@@ -50,7 +50,7 @@ function Footer() {
           <ul>
             <p className="text-white font-bold text-2xl pb-4">Sobre nós</p>
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-              <Link href="/#empresa">Quem Somos </Link>
+              <Link href="/#quemsomos">Quem Somos </Link>
             </li>
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
               <Link href="/#valores">Nossos valores</Link>
