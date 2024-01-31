@@ -4,20 +4,25 @@ import Image from "next/image";
 
 export default function Empresa() {
   return (
-    <div id="quemsomos" className=" ">
-      <div>
+    <div id="quemsomos" className="mt-24">
+
+      
+      <div className="">
         <Image
          src={ProdutoImg} 
          alt="/" 
          width={0} 
          height={1500} 
-         className="opacity- cursor-pointer"
+         className="cursor-pointer"  
+         style={{ borderRadius: "15px" }}
          />
       </div>
 
-      <div className="p-20">
+      
+
+      <div className="p-5 md:p-20">
         <h2 className=" font-sans text-4xl">Empresa</h2>
-        <div className="text-2xl font-sans mt-5">
+        <div className="text-lg font-sans mt-5">
           Há 15 anos, a Canaã Pallets é referência na fabricação de pallets e
           embalagens de madeira, situada em Mogi Guaçu, São Paulo. Comprometida
           com a excelência e qualidade, buscamos constantemente superar as

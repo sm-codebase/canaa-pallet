@@ -102,13 +102,13 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/#missao">Missão</Link>
+              <Link href="/missao">Missão</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/#valores">Nossos valores</Link>
+              <Link href="/nossosvalores">Nossos valores</Link>
             </li>
             
             <li

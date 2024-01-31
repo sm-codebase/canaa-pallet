@@ -4,20 +4,23 @@ import Image from "next/image";
 
 export default function Compromisso() {
   return (
-    <div id="quemsomos" className=" ">
-      <div>
+    <div id="quemsomos" className="mt-24">
+      <div className="">
         <Image
           src={ProdutoImg}
           alt="/"
           width={0}
           height={800}
-          className="opacity- cursor-pointer"
+          className="cursor-pointer rounded-lg"
+          layout="responsive"
+        
+          
         />
       </div>
 
-      <div className="p-20">
+      <div className="p-5 md:p-20">
         <h2 className=" font-sans text-4xl">Compromisso</h2>
-        <div className="text-2xl font-sans mt-5">
+        <div className="text-lg font-sans mt-5">
           Nossa missão é superar as expectativas dos clientes, oferecendo
           produtos de alta qualidade e atendimento excepcional na fabricação de
           paletes e caixas de madeira. Localizada em Mogi Guaçu, São Paulo, a
