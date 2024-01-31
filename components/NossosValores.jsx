@@ -19,7 +19,7 @@ export default function NossosValores() {
 
       <div className="p-5 md:p-20">
         <h2 className=" font-sans text-4xl">Valores</h2>
-        <div className="text-lg mt-5">
+        <div className="text-base mt-5">
           Os valores fundamentais que norteiam a Canaã Pallets são integridade,
           colaboração, empenho, perspectiva, melhoria contínua, inovação e
           flexibilidade. Comprometemo-nos com a honestidade e justiça,

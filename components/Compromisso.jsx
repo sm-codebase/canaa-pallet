@@ -19,7 +19,7 @@ export default function Compromisso() {
 
       <div className="p-5 md:p-20">
         <h2 className=" font-sans text-4xl">Compromisso</h2>
-        <div className="text-lg font-sans mt-5">
+        <div className="text-base font-sans mt-5">
           Nossa missão é superar as expectativas dos clientes, oferecendo
           produtos de alta qualidade e atendimento excepcional na fabricação de
           paletes e caixas de madeira. Localizada em Mogi Guaçu, São Paulo, a

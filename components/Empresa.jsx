@@ -22,7 +22,7 @@ export default function Empresa() {
 
       <div className="p-5 md:p-20">
         <h2 className=" font-sans text-4xl">Empresa</h2>
-        <div className="text-lg font-sans mt-5">
+        <div className="text-base font-sans mt-5">
           Há 15 anos, a Canaã Pallets é referência na fabricação de pallets e
           embalagens de madeira, situada em Mogi Guaçu, São Paulo. Comprometida
           com a excelência e qualidade, buscamos constantemente superar as
