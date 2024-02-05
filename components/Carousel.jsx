@@ -8,41 +8,42 @@ import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 import primg4 from "../public/assets/carousel/pr-img-4.jpg";
 import Logo from "../public/assets/carousel/logo.png";
 
+const defaultSummary = "Sustentabilidade e qualidade caminham lado a lado";
+const defaultDescription =
+  "Fabricamos produtos e embalagens de madeira com a certificação ISO, garantindo que cada peça seja ecologicamente responsável e ideal para necessidades industriais.";
+
 const slides = [
   {
     id: 1,
     src: primg1,
     alt: "Image 1",
-    summary: "Sustentabilidade e qualidade caminham lado a lado",
-    description:
-      "Fabricamos produtos e embalagens de madeira com a certificação ISO, garantindo que cada peça seja ecologicamente responsável e ideal para necessidades industriais. ",
+    summary: defaultSummary,
+    description: defaultDescription,
   },
   {
     id: 2,
     src: primg2,
     alt: "Image 2",
-    summary: "Embalagens sob medida",
-    description:
-      "Nossa abordagem personalizada assegura que cada embalagem seja projetada com precisão, garantindo a proteção ideal para seus produtos durante o transporte e armazenamento. Ao optar por nossas embalagens sob medida, você está escolhendo a excelência em design e funcionalidade para atender aos requisitos únicos do seu setor.",
+    summary: defaultSummary,
+    description: defaultDescription,
   },
   {
     id: 3,
     src: primg3,
     alt: "Image 3",
-    summary: "Estamos comprometidos com um futuro sustentável",
-    description:
-      "Utilizando 100% de energia proveniente do sol. Ao nos escolher, você apoia um futuro mais limpo e sustentável.",
+    summary: defaultSummary,
+    description: defaultDescription,
   },
   {
     id: 4,
     src: primg4,
     alt: "Image 4",
-    summary:
-      "Compromisso com o futuro! Todas as nossas embalagens e produtos de madeira vêm de fontes de reflorestamento.",
-    description:
-      "Canaã Pallets, cada produto conta uma história de responsabilidade ambiental. Nossas embalagens e pallets são frutos de florestas geridas de forma sustentável, garantindo o equilíbrio do nosso ecossistema. Escolha parceiros que, como nós, colocam o planeta em primeiro lugar.",
+    summary: defaultSummary,
+
+    description: defaultDescription,
   },
 ];
+
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -80,7 +81,7 @@ function Carousel() {
 
   return (
     <div
-      className="max-w-[1200px] h-[560px] w-full m-auto py- px-2  relative group"
+      className="max-w-full h-[750px] w-full m-auto py- px-  relative group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -94,12 +95,12 @@ function Carousel() {
           priority // Add the priority property
         />
 
-        <div className="absolute px-4 flex items-center justify-center font-bold text-center animate-fade-in drop-shadow-lg h-full w-full">
+        <div className="absolute  p-5 mt-10 md:grid grid-cols-3 md:p-20  justify-center font-bold  animate-fade-in drop-shadow-lg h-full w-full">
           <div>
-            <h1 className="text-3xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
+            <h1 className="text-4xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
               {slides[currentIndex].summary}
             </h1>
-            <p className="text-white py-4">
+            <p className="text-white py-4 text-xl leading-8">
               {slides[currentIndex].description}
             </p>
           </div>
