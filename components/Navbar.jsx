@@ -55,10 +55,10 @@ const Navbar = () => {
             <Link href="/empresa">Quem Somos</Link>
           </li>
           <li className="p-4">
-            <Link href="/missao">Missão</Link>
+            <Link href="/missao">Sustentabilidade</Link>
           </li>
           <li className="p-4">
-            <Link href="/nossosvalores">Nossos valores</Link>
+            <Link href="/nossosvalores">Produtos</Link>
           </li>
           
           <li className="p-4">
