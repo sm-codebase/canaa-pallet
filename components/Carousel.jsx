@@ -8,7 +8,7 @@ import primg4 from "../public/assets/carousel/pr-img-4.jpg";
 import Box from "../components/Box";
 import Link from "next/link";
 
-const defaultSummary = "SUSTENTABILIDADE E QUALIDADE: UMA PARCERIA INSEPARÁVEL E ESSENCIAL ";
+const defaultSummary = "Sustentabilidade e qualidade: uma parceria inseparável e essencial ";
 const defaultDescription =
   "Na nossa empresa, priorizamos a sustentabilidade e a qualidade em todos os nossos produtos. Fabricamos cuidadosamente nossas peças e embalagens de madeira, garantindo que cada uma delas atenda aos mais altos padrões de responsabilidade ambiental. Com a certificação ISO, podemos assegurar não apenas a qualidade excepcional de nossos produtos, mas também o compromisso com práticas sustentáveis.";
 
@@ -95,12 +95,12 @@ function Carousel() {
             priority // Add the priority property
           />
 
-          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-20   font-bold animate-fade-in drop-shadow-lg h-full w-full">
+          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
-              <h1 className="text-3xl  md:text-5xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
+              <h1 className="text-3xl  md:text-4xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
                 {slides[currentIndex].summary}
               </h1>
-              <p className="text-white py-4 text-lg font-medium font-mono leading-8">
+              <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
                 {slides[currentIndex].description}
               </p>
               <li className="grid justify-items-start">

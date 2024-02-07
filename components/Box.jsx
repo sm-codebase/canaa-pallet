@@ -7,7 +7,7 @@ const Box = () => {
     <div className="">
       <div
         style={{ borderRadius: "60px" }}
-        className="bg-slate-300  md:w-[1400px] md:h-[600px]  mx-auto relative  md:-mt-40 -mt-24 "
+        className="bg-slate-300  md:w-[1250px] md:h-[600px]  mx-auto relative  md:-mt-40 -mt-24 "
       >
       
         <div className="grid justify-center p-20 mt-10 ">

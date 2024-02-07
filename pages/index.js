@@ -6,6 +6,7 @@ import SimpleMap from "../components/SimpleMap";
 import QuemSomos from "../components/QuemSomos";
 import Missao from "../components/Missao";
 import Valores from "../components/Valores";
+import Whatsapp from "../components/Whatsapp";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Missao />
       <Valores />
       <SimpleMap />
+      <Whatsapp />
     </div>
   );
 }
