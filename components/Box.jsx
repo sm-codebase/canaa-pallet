@@ -7,9 +7,8 @@ const Box = () => {
     <div className="">
       <div
         style={{ borderRadius: "60px" }}
-        className="bg-slate-300  md:w-[1250px] md:h-[600px]  mx-auto relative  md:-mt-40 -mt-24 "
+        className="bg-slate-300  md:w-[1250px] md:h-[550px]  mx-auto relative   -mt-40  "
       >
-      
         <div className="grid justify-center p-20 mt-10 ">
           <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
         </div>
@@ -21,12 +20,16 @@ const Box = () => {
             fluxo de processos nos moldes da manufatura enxuta. Com um ambiente
             saudável, limpo, organizado, a empresa proporciona aos seus
             colaboradores conforto e segurança nas suas operações, atingindo
-            altos níveis de produtividade. Nossos reflorestamentos próprios
-            permitem abastecimento continuo de nossas matérias primas em
-            qualquer época do ano, e são certificados com rígidos processos de
-            controle, incluindo o certificado FSC. Tudo isso com o compromisso
-            de manter o equilíbrio do meio ambiente, protegendo matas nativas,
-            nascentes e cuidando com responsabilidade da fauna e da flora.
+            altos níveis de produtividade.
+          </p>
+          <p className="mt-8">
+            {" "}
+            Nossos reflorestamentos próprios permitem abastecimento continuo de
+            nossas matérias primas em qualquer época do ano, e são certificados
+            com rígidos processos de controle, incluindo o certificado FSC. Tudo
+            isso com o compromisso de manter o equilíbrio do meio ambiente,
+            protegendo matas nativas, nascentes e cuidando com responsabilidade
+            da fauna e da flora.
           </p>
         </div>
       </div>

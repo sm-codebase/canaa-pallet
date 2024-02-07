@@ -5,7 +5,6 @@ import primg1 from "../public/assets/carousel/pr-img-1.jpg";
 import primg2 from "../public/assets/carousel/pr-img-2.jpg";
 import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 import primg4 from "../public/assets/carousel/pr-img-4.jpg";
-import Box from "../components/Box";
 import Link from "next/link";
 
 const defaultSummary = "Sustentabilidade e qualidade: uma parceria inseparável e essencial ";
@@ -81,7 +80,7 @@ function Carousel() {
   return (
     <div className="relative">
       <div
-        className="max-w-full h-[900px]  w-full m-auto relative group"
+        className="max-w-full h-[750px] md:h-[900px] w-full m-auto relative group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -105,7 +104,7 @@ function Carousel() {
               </p>
               <li className="grid justify-items-start">
                 <Link href="/#missao">
-                  <button className="md:w-1/2 w-full h-[40px] rounded-full mt-5 ">
+                  <button className="md:w-1/2 w-full h-[40px] rounded-full mt-10 ">
                     Saiba mais
                   </button>
                 </Link>
