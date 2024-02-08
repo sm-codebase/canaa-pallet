@@ -6,7 +6,7 @@ import SimpleMap from "../components/SimpleMap";
 import QuemSomos from "../components/QuemSomos";
 import Valores from "../components/Valores";
 import Missao from "../components/Missao";
-
+import Contact from "../components/Contact";
 import Whatsapp from "../components/Whatsapp";
 
 export default function Home() {
@@ -25,6 +25,7 @@ export default function Home() {
       <Missao />
      
       <SimpleMap />
+      <Contact />
       <Whatsapp />
     </div>
   );

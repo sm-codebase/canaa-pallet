@@ -59,34 +59,36 @@ const Navbar = () => {
               : "absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-green-700 text-center ease-in duration-300"
           }
         >
-          <div className="flex flex-col sm:flex-row justify-around items-center w-full p-4 sm:p-20 text-white text-left">
+          <div className="flex flex-col sm:flex-row justify-around justify-items-center w-full p-4 sm:p-20 text-white text-start">
             <div className="prod" style={{ margin: "0 20px" }}>
               <ul>
-                <h1 className="p-4 text-2xl" style={{ borderBottom: "2px solid white", paddingBottom: "10px" }}>Canaã</h1>
-                <li onClick={handleNav} className="p-4 text-3xl hover:text-gray-500">
+                <h1 className="p-4 text-1xl" style={{ borderBottom: "2px solid white", paddingBottom: "10px" }}>Canaã</h1>
+                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
                   <Link href="/">Home</Link>
                 </li>
-                <li onClick={handleNav} className="p-4 text-3xl hover:text-gray-500">
+                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
                   <Link href="/">Quem Somos</Link>
                 </li>
-                <li onClick={handleNav} className="p-4 text-3xl hover:text-gray-500">
+                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
                   <Link href="/">Sustentabilidade</Link>
                 </li>
-                <li onClick={handleNav} className="p-4 text-3xl hover:text-gray-500">
+                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
                   <Link href="/">Contatos</Link>
                 </li>
                 {/* Outros itens da lista */}
               </ul>
             </div>
-            <div className="prod" style={{ margin: "0 20px" }}>
+            <div className="prod " style={{ margin: "0 20px" }}>
               <ul>
-                <h1 className="p-4 text-2xl" style={{ borderBottom: "2px solid white", paddingBottom: "10px" }}>Produtos</h1>
-                <li onClick={handleNav} className="p-4 text-3xl hover:text-gray-500">
-                  <Link href="/">Produto 1</Link>
+                <h1 className="p-4 mt-5 text-1xl" style={{ borderBottom: "2px solid white", paddingBottom: "10px" }}>Produtos</h1>
+                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
+                  <Link href="/">Embalagens</Link>
                 </li>
-                <li onClick={handleNav} className="p-4 text-3xl hover:text-gray-500">
-                  <Link href="/">Home</Link>
+                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
+                  <Link href="/">Pallet</Link>
                 </li>
+                
+                
                 {/* Outros itens da lista */}
               </ul>
             </div>
@@ -97,3 +99,9 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+
+
+
+
+
+

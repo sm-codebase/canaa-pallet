@@ -13,9 +13,9 @@ const Box = () => {
           <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
         </div>
 
-        <div className="grid text-center p-10 font-sans font-semibold text-lg leading-loose">
+        <div className="grid text-center p-10 font-sans font-medium text-lg leading-loose">
           <p>
-            A Canaã Pallets destaca-se por suas unidades industriais que possuem
+            A <b>Canaã Pallets</b> destaca-se por suas unidades industriais que possuem
             uma estrutura moderna. Equipadas com tecnologia de ponta e processos
             automatizados, seguimos os princípios da manufatura enxuta para
             garantir eficiência em cada etapa. Priorizamos um ambiente de
