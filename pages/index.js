@@ -17,15 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Carousel />
-      <Box />
-      <Certifications />
       
-      <Valores />
-      <QuemSomos />
-      <Missao />
-     
-      <SimpleMap />
-      <Whatsapp />
     </div>
   );
 }
