@@ -41,9 +41,9 @@ const Form = () => {
           <option value="" disabled hidden>
             Selecione o Assunto
           </option>
-          <option value="Compra de Palio">Compra de Pallet</option>
+          <option value="Compra de Pallet">Compra de Pallet</option>
           <option value="RH">RH</option>
-          <option value="Logística">Logística</option>
+          <option value="Comercial">Comercial</option>
           {/* Adicione outras opções conforme necessário */}
         </select>
         <textarea

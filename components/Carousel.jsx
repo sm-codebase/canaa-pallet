@@ -1,48 +1,47 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { RxDotFilled } from "react-icons/rx";
 import primg1 from "../public/assets/carousel/pr-img-1.jpg";
 import primg2 from "../public/assets/carousel/pr-img-2.jpg";
 import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 import primg4 from "../public/assets/carousel/pr-img-4.jpg";
-import Logo from "../public/assets/carousel/logo.png";
+import Link from "next/link";
+
+const defaultSummary = "Sustentabilidade e qualidade: uma parceria inseparável e essencial ";
+const defaultDescription =
+  "Na nossa empresa, priorizamos a sustentabilidade e a qualidade em todos os nossos produtos. Fabricamos cuidadosamente nossas peças e embalagens de madeira, garantindo que cada uma delas atenda aos mais altos padrões de responsabilidade ambiental. Com a certificação ISO, podemos assegurar não apenas a qualidade excepcional de nossos produtos, mas também o compromisso com práticas sustentáveis.";
 
 const slides = [
   {
     id: 1,
     src: primg1,
     alt: "Image 1",
-    summary: "Sustentabilidade e qualidade caminham lado a lado",
-    description:
-      "Fabricamos produtos e embalagens de madeira com a certificação ISO, garantindo que cada peça seja ecologicamente responsável e ideal para necessidades industriais. ",
+    summary: defaultSummary,
+    description: defaultDescription,
   },
   {
     id: 2,
     src: primg2,
     alt: "Image 2",
-    summary: "Embalagens sob medida",
-    description:
-      "Nossa abordagem personalizada assegura que cada embalagem seja projetada com precisão, garantindo a proteção ideal para seus produtos durante o transporte e armazenamento. Ao optar por nossas embalagens sob medida, você está escolhendo a excelência em design e funcionalidade para atender aos requisitos únicos do seu setor.",
+    summary: defaultSummary,
+    description: defaultDescription,
   },
   {
     id: 3,
     src: primg3,
     alt: "Image 3",
-    summary: "Estamos comprometidos com um futuro sustentável",
-    description:
-      "Utilizando 100% de energia proveniente do sol. Ao nos escolher, você apoia um futuro mais limpo e sustentável.",
+    summary: defaultSummary,
+    description: defaultDescription,
   },
   {
     id: 4,
     src: primg4,
     alt: "Image 4",
-    summary:
-      "Compromisso com o futuro! Todas as nossas embalagens e produtos de madeira vêm de fontes de reflorestamento.",
-    description:
-      "Canaã Pallets, cada produto conta uma história de responsabilidade ambiental. Nossas embalagens e pallets são frutos de florestas geridas de forma sustentável, garantindo o equilíbrio do nosso ecossistema. Escolha parceiros que, como nós, colocam o planeta em primeiro lugar.",
+    summary: defaultSummary,
+    description: defaultDescription,
   },
 ];
+
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -79,60 +78,64 @@ function Carousel() {
   }, [isHovered, currentIndex]);
 
   return (
-    <div
-      className="max-w-[1200px] h-[560px] w-full m-auto py- px-2  relative group"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-green-900 to-green-700">
-        <Image
-          className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-30"
-          src={slides[currentIndex].src}
-          alt={`Slide ${slides[currentIndex].id}`}
-          layout="fill"
-          objectFit="cover"
-          priority // Add the priority property
-        />
+    <div className="relative">
+      <div
+        className="max-w-full h-[750px] md:h-[900px] w-full m-auto relative group"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
+          <Image
+            className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-30"
+            src={slides[currentIndex].src}
+            alt={`Slide ${slides[currentIndex].id}`}
+            layout="fill"
+            objectFit="cover"
+            priority // Add the priority property
+          />
 
-        <div className="absolute px-4 flex items-center justify-center font-bold text-center animate-fade-in drop-shadow-lg h-full w-full">
-          <div>
-            <h1 className="text-3xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
-              {slides[currentIndex].summary}
-            </h1>
-            <p className="text-white py-4">
-              {slides[currentIndex].description}
-            </p>
+          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
+            <div className="">
+              <h1 className="text-3xl  md:text-4xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
+                {slides[currentIndex].summary}
+              </h1>
+              <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
+                {slides[currentIndex].description}
+              </p>
+              <li className="grid justify-items-start">
+                <Link href="/#missao">
+                  <button className="md:w-1/2 w-full h-[40px] rounded-full mt-10 ">
+                    Saiba mais
+                  </button>
+                </Link>
+              </li>
+            </div>
           </div>
         </div>
-        <div className="absolute bottom-5 grid justify-items-center w-full">
-          <Image src={Logo} alt="logo-branco" height={38.5} width={116.6} />
-        </div>
-      </div>
 
-      {/* Left Arrow*/}
-      <div
-        className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5
+        {/* Left Arrow*/}
+        <div
+          className="hidden group-hover:block absolute top-[40%] -translate-x-0 translate-y-[-40%] left-5
        text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
-      >
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
-      </div>
-      {/* Right Arrow*/}
-      <div
-        className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5
+        >
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        </div>
+        {/* Right Arrow*/}
+        <div
+          className="hidden group-hover:block absolute top-[40%] -translate-x-0 translate-y-[-40%] right-5
        text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
-      >
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
-      <div className="flex top-4 justify-center py-2">
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            onClick={() => goToSlide(slide.id - 1)}
-            className="text-lg cursor-pointer"
-          >
-            <RxDotFilled />
-          </div>
-        ))}
+        >
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
+        </div>
+        <div className="flex top-4 justify-center py-2">
+          {slides.map((slide) => (
+            <div
+              key={slide.id}
+              onClick={() => goToSlide(slide.id - 1)}
+              className="text-lg cursor-pointer"
+            ></div>
+          ))}
+        </div>
       </div>
     </div>
   );
