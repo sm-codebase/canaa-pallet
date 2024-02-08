@@ -5,7 +5,7 @@ import Cert2 from "../public/assets/cetifications/bureau-veritas.png";
 
 const Certifications = () => {
   return (
-    <div className='container mx-auto  p-10'>
+    <div className='container mx-auto  p-5'>
     <div className="md:flex grid justify-center gap-5 ">
     <div className="">
       <Image

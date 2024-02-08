@@ -15,21 +15,23 @@ const Box = () => {
 
         <div className="grid text-center p-10 font-sans font-semibold text-lg leading-loose">
           <p>
-            A Ripack possui nas suas unidades industriais uma estrutura moderna,
-            com mais de 20.000m2 de área fabril, equipamentos automatizados, com
-            fluxo de processos nos moldes da manufatura enxuta. Com um ambiente
-            saudável, limpo, organizado, a empresa proporciona aos seus
-            colaboradores conforto e segurança nas suas operações, atingindo
-            altos níveis de produtividade.
+            A Canaã Pallets destaca-se por suas unidades industriais que possuem
+            uma estrutura moderna. Equipadas com tecnologia de ponta e processos
+            automatizados, seguimos os princípios da manufatura enxuta para
+            garantir eficiência em cada etapa. Priorizamos um ambiente de
+            trabalho saudável, limpo e organizado, proporcionando conforto e
+            segurança aos nossos colaboradores, o que se reflete em altos níveis
+            de produtividade.
           </p>
           <p className="mt-8">
             {" "}
-            Nossos reflorestamentos próprios permitem abastecimento continuo de
-            nossas matérias primas em qualquer época do ano, e são certificados
-            com rígidos processos de controle, incluindo o certificado FSC. Tudo
-            isso com o compromisso de manter o equilíbrio do meio ambiente,
-            protegendo matas nativas, nascentes e cuidando com responsabilidade
-            da fauna e da flora.
+            Além disso, investimos em reflorestamentos próprios que garantem o
+            abastecimento contínuo de nossas matérias-primas durante todo o ano.
+            Todos os nossos reflorestamentos são certificados com rigorosos
+            processos de controle, incluindo a certificação FSC, reforçando
+            nosso compromisso com a sustentabilidade. Preservamos o equilíbrio
+            ambiental, protegendo matas nativas, nascentes e zelando
+            responsavelmente pela fauna e flora em todas as nossas atividades.
           </p>
         </div>
       </div>
