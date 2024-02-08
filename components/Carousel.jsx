@@ -80,13 +80,13 @@ function Carousel() {
   return (
     <div className="relative">
       <div
-        className="max-w-full h-[750px] md:h-[900px] w-full m-auto relative group"
+        className="max-w-full h-[900px] md:h-[900px] w-full m-auto relative group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
-            className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-30"
+            className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
             src={slides[currentIndex].src}
             alt={`Slide ${slides[currentIndex].id}`}
             layout="fill"
@@ -102,9 +102,9 @@ function Carousel() {
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
                 {slides[currentIndex].description}
               </p>
-              <li className="grid justify-items-start">
+              <li className="grid justify-items-start ">
                 <Link href="/#missao">
-                  <button className="md:w-1/2 w-full h-[40px] rounded-full mt-10 ">
+                  <button className="md:w-1/2 w-full h-[40px] rounded-full   ">
                     Saiba mais
                   </button>
                 </Link>
