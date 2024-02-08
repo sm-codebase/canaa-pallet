@@ -4,8 +4,9 @@ import Box from "../components/Box";
 import Certifications from "../components/Certifications";
 import SimpleMap from "../components/SimpleMap";
 import QuemSomos from "../components/QuemSomos";
-import Missao from "../components/Missao";
 import Valores from "../components/Valores";
+import Missao from "../components/Missao";
+
 import Whatsapp from "../components/Whatsapp";
 
 export default function Home() {
@@ -18,9 +19,11 @@ export default function Home() {
       <Carousel />
       <Box />
       <Certifications />
+      
+      <Valores />
       <QuemSomos />
       <Missao />
-      <Valores />
+     
       <SimpleMap />
       <Whatsapp />
     </div>

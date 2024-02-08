@@ -84,7 +84,7 @@ function Carousel() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-800">
+        <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
             className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-30"
             src={slides[currentIndex].src}

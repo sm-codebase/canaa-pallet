@@ -7,9 +7,9 @@ const Box = () => {
     <div className="">
       <div
         style={{ borderRadius: "60px" }}
-        className="bg-slate-300  md:w-[1250px] md:h-[550px]  mx-auto relative   -mt-40  "
+        className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white  md:w-[1250px] md:h-[550px]  mx-auto relative  -mt-40"
       >
-        <div className="grid justify-center p-20 mt-10 ">
+        <div className="grid justify-center p-10 mt-10 ">
           <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
         </div>
 
