@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Form = () => {
   return (
-    <div>
+    <div
+      id="form"
+      className="flex md:flex-row flex-col-reverse justify-center gap-10 text-left p-5 mt-24"
+    >
       <form
-        className="max-w-[600px] m-auto p-5"
+        className="max-w-[600px]"
         action="https://getform.io/f/e27122d0-21c4-4930-8a9d-37c17244c7c7"
         method="POST"
         encType="multipart/form-data"
@@ -60,8 +63,24 @@ const Form = () => {
           multiple
           className="border shadow-lg p-3 w-full my-2"
         />
-        <button className="border shadow-lg p-3 w-full mt-2">Enviar</button>
+        <div className="grid  justify-items-center">
+            <button className="border shadow-lg p-2 w-[200px] rounded-3xl mt-4">Enviar</button>
+            </div>
       </form>
+      <div className="flex flex-col gap-8 p-8">
+        <h1 className="text-4xl font-bold">Trabalhe conosco!</h1>
+        <p>
+          Precisamos de pessoas como voce.
+        </p>
+        <div>
+          <p className="font-bold">Endereço</p>
+          <p>Rua Joaquim de Seabra, n° 515, Mogi-Guaçu, SP, Brazil</p>
+        </div>
+        <div>
+          <p className="font-bold">Contato</p>
+          <p>(19) 3861-2511 | canaa@canaapallets.com.br</p>
+        </div>
+      </div>
     </div>
   );
 };

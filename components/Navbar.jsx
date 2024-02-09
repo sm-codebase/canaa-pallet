@@ -1,34 +1,32 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import NavLogo from "../public/logo.svg";
 import Hamburger from "hamburger-react";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false)
-
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("white");
-  const [textColor, setTextColor] = useState("black");
   const handleNav = () => {
     setNav(!nav);
   };
+
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setColor("#ffffff");
-        setTextColor("#000000");
       } else {
         setColor("white");
-        setTextColor("#000000");
       }
     };
+
     window.addEventListener("scroll", changeColor);
     return () => window.removeEventListener("scroll", changeColor);
   }, []);
+
   return (
     <div
+      id="navbar"
       style={{ backgroundColor: `${color}` }}
       className="fixed h-[95px] left-0 top-0 w-full z-10 ease-in duration-300"
     >
@@ -44,16 +42,9 @@ const Navbar = () => {
             />
           </a>
         </Link>
-        <div className="px-10 md:text-base text-lg font-thin leading-4 hidden sm:flex text-green-700">
-          <p>Especialista fabricação de pallets e embalagens de madeira</p>
-        </div>
         {/* Mobile button */}
         <div onClick={handleNav} className="block z-10">
-      
-            <Hamburger color="gray"  toggle={setOpen} toggled={isOpen}/>
-          
-            
-     
+          <Hamburger color="gray" toggled={nav} toggle={setNav} />
         </div>
         {/* Mobile menu */}
         <div
@@ -66,33 +57,65 @@ const Navbar = () => {
           <div className="flex flex-col sm:flex-row justify-around justify-items-center w-full p-4 sm:p-20 text-white text-start">
             <div className="prod" style={{ margin: "0 20px" }}>
               <ul>
-                <h1 className="p-4 text-1xl" style={{ borderBottom: "2px solid white", paddingBottom: "10px" }}>Canaã</h1>
-                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
+                <h1
+                  className="p-4 text-1xl"
+                  style={{
+                    borderBottom: "2px solid white",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  Canaã
+                </h1>
+                <li
+                  onClick={handleNav}
+                  className="p-2 text-2xl hover:text-gray-500"
+                >
                   <Link href="/">Home</Link>
                 </li>
-                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
-                  <Link href="/">Quem Somos</Link>
+                <li
+                  onClick={handleNav}
+                  className="p-2 text-2xl hover:text-gray-500"
+                >
+                  <Link href="/empresa">Quem Somos</Link>
                 </li>
-                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
-                  <Link href="/">Sustentabilidade</Link>
+                <li
+                  onClick={handleNav}
+                  className="p-2 text-2xl hover:text-gray-500"
+                >
+                  <Link href="/sustentabilidade">Sustentabilidade</Link>
                 </li>
-                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
-                  <Link href="/">Contatos</Link>
+                <li
+                  onClick={handleNav}
+                  className="p-2 text-2xl hover:text-gray-500"
+                >
+                  <Link href="/contact">Contato</Link>
                 </li>
                 {/* Outros itens da lista */}
               </ul>
             </div>
             <div className="prod " style={{ margin: "0 20px" }}>
               <ul>
-                <h1 className="p-4 mt-5 text-1xl" style={{ borderBottom: "2px solid white", paddingBottom: "10px" }}>Produtos</h1>
-                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
+                <h1
+                  className="p-4 mt-5 text-1xl"
+                  style={{
+                    borderBottom: "2px solid white",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  Produtos
+                </h1>
+                <li
+                  onClick={handleNav}
+                  className="p-2 text-2xl hover:text-gray-500"
+                >
                   <Link href="/">Embalagens</Link>
                 </li>
-                <li onClick={handleNav} className="p-2 text-2xl hover:text-gray-500">
+                <li
+                  onClick={handleNav}
+                  className="p-2 text-2xl hover:text-gray-500"
+                >
                   <Link href="/">Pallet</Link>
                 </li>
-                
-                
                 {/* Outros itens da lista */}
               </ul>
             </div>
@@ -103,9 +126,3 @@ const Navbar = () => {
   );
 };
 export default Navbar;
-
-
-
-
-
-

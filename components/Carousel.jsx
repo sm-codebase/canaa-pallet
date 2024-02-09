@@ -7,7 +7,8 @@ import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 import primg4 from "../public/assets/carousel/pr-img-4.jpg";
 import Link from "next/link";
 
-const defaultSummary = "Sustentabilidade e qualidade: uma parceria inseparável e essencial ";
+const defaultSummary =
+  "Sustentabilidade e qualidade: uma parceria inseparável e essencial ";
 const defaultDescription =
   "Na nossa empresa, priorizamos a sustentabilidade e a qualidade em todos os nossos produtos. Fabricamos cuidadosamente nossas peças e embalagens de madeira, garantindo que cada uma delas atenda aos mais altos padrões de responsabilidade ambiental. Com a certificação ISO, podemos assegurar não apenas a qualidade excepcional de nossos produtos, mas também o compromisso com práticas sustentáveis.";
 
@@ -78,7 +79,7 @@ function Carousel() {
   }, [isHovered, currentIndex]);
 
   return (
-    <div className="relative">
+    <div id="carousel" className="relative">
       <div
         className="max-w-full h-[920px] md:h-[900px] w-full m-auto relative group"
         onMouseEnter={() => setIsHovered(true)}
@@ -102,7 +103,7 @@ function Carousel() {
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
                 {slides[currentIndex].description}
               </p>
-              <li className="grid justify-items-start p-4">
+              <li className="grid justify-items-start pt-4">
                 <Link href="/#missao">
                   <button className="md:w-1/2 w-full h-[40px] rounded-full">
                     Saiba mais
