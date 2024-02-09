@@ -80,7 +80,7 @@ function Carousel() {
   return (
     <div className="relative">
       <div
-        className="max-w-full h-[900px] md:h-[900px] w-full m-auto relative group"
+        className="max-w-full h-[920px] md:h-[900px] w-full m-auto relative group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -102,9 +102,9 @@ function Carousel() {
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
                 {slides[currentIndex].description}
               </p>
-              <li className="grid justify-items-start ">
+              <li className="grid justify-items-start p-4">
                 <Link href="/#missao">
-                  <button className="md:w-1/2 w-full h-[40px] rounded-full   ">
+                  <button className="md:w-1/2 w-full h-[40px] rounded-full">
                     Saiba mais
                   </button>
                 </Link>

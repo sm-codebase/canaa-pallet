@@ -3,9 +3,7 @@ import Carousel from "../components/Carousel";
 import Box from "../components/Box";
 import Certifications from "../components/Certifications";
 import SimpleMap from "../components/SimpleMap";
-import QuemSomos from "../components/QuemSomos";
 import Valores from "../components/Valores";
-import Missao from "../components/Missao";
 import Contact from "../components/Contact";
 import Whatsapp from "../components/Whatsapp";
 
@@ -19,11 +17,7 @@ export default function Home() {
       <Carousel />
       <Box />
       <Certifications />
-      
       <Valores />
-      <QuemSomos />
-      <Missao />
-     
       <SimpleMap />
       <Contact />
       <Whatsapp />

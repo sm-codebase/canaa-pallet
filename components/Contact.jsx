@@ -3,11 +3,11 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='maxx-w[1240px] m-auto mt-20 '>
+    <div className='maxx-w[1240px] m-auto p-5'>
         <h1 className='text-2xl font-bold text-center p-4'>Seja nosso cliente</h1>
-        
+        <div className='grid md:grid-cols-2'>
         <form 
-         className='max-w-[600px] m-auto mt-5'
+         className='max-w-[600px] m-auto '
          action='https://getform.io/f/e27122d0-21c4-4930-8a9d-37c17244c7c7'
          method='POST'
          encType='multipart/form-data'
@@ -38,8 +38,9 @@ const Contact = () => {
               placeholder='Menssagem'
               name='mensagem'
               />
-            <button className='border shadow-lg p-3 w-full mt-2'>Enviar</button>
+            <button className='border shadow-lg p-2 w-full '>Enviar</button>
         </form>
+        </div>
     </div>
   )
 }

@@ -6,9 +6,9 @@ const Valores = () => {
   return (
     <div
       id="valores"
-      className="container  bg-green-100 text-white  w-full h-full md:h-[700px]  p-10"
+      className="container  bg-green-100 text-white  w-full h-full md:h-[700px]"
     >
-      <div className="grid justify-center gap-3  md:grid-cols-3 justify-items-center ">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full h-full gap-5 p-10">
         <div
           style={{ borderRadius: "50px", transition: "all 0.4s" }}
           className="bg-white w-[350px] md:w-[400px] h-[375px] hover:scale-110 hover:bg-green-500"
