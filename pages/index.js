@@ -4,7 +4,7 @@ import Box from "../components/Box";
 import Certifications from "../components/Certifications";
 import SimpleMap from "../components/SimpleMap";
 import Valores from "../components/Valores";
-import Contact from "../components/Contact";
+import FaleConosco from "../components/FaleConosco";
 import Whatsapp from "../components/Whatsapp";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <Certifications />
       <Valores />
       <SimpleMap />
-      <Contact />
+      <FaleConosco />
       <Whatsapp />
     </div>
   );

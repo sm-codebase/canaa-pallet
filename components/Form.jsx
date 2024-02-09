@@ -4,21 +4,21 @@ const Form = () => {
   return (
     <div>
       <form
-        className="max-w-[600px] m-auto mt-24"
+        className="max-w-[600px] m-auto p-5"
         action="https://getform.io/f/e27122d0-21c4-4930-8a9d-37c17244c7c7"
         method="POST"
         encType="multipart/form-data"
       >
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid md:grid-cols-2 gap-2">
           <input
-            className="border shadow-lg p-3"
+            className="border shadow-lg p-3 w-full my-2"
             type="text"
             placeholder="Nome"
             name="nome"
             required
           />
           <input
-            className="border shadow-lg p-3"
+            className="border shadow-lg p-3 w-full my-2"
             type="email"
             placeholder="Email"
             name="email"
@@ -49,7 +49,7 @@ const Form = () => {
         <textarea
           className="border shadow-lg p-3 w-full"
           cols=""
-          rows="10"
+          rows="3"
           placeholder="Mensagem"
           name="mensagem"
           required

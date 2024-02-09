@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className='maxx-w[1240px] m-auto p-5'>
         <h1 className='text-2xl font-bold text-center p-4'>Seja nosso cliente</h1>
-        <div className='grid md:grid-cols-2'>
+        <div className=''>
         <form 
          className='max-w-[600px] m-auto '
          action='https://getform.io/f/e27122d0-21c4-4930-8a9d-37c17244c7c7'

@@ -3,7 +3,11 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import NavLogo from "../public/logo.svg";
+import Hamburger from "hamburger-react";
+
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false)
+
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("white");
   const [textColor, setTextColor] = useState("black");
@@ -45,11 +49,11 @@ const Navbar = () => {
         </div>
         {/* Mobile button */}
         <div onClick={handleNav} className="block z-10">
-          {nav ? (
-            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
-          ) : (
-            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
-          )}
+      
+            <Hamburger color="gray"  toggle={setOpen} toggled={isOpen}/>
+          
+            
+     
         </div>
         {/* Mobile menu */}
         <div
