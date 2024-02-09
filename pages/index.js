@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Canaã Pallets</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-2.png" />
       </Head>
       <Carousel />
       <Box />
