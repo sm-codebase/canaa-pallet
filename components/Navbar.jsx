@@ -88,7 +88,7 @@ const Navbar = () => {
                   onClick={handleNav}
                   className="p-2 text-2xl hover:text-gray-500"
                 >
-                  <Link href="/contact">Contato</Link>
+                  <Link href="/contact">Vagas</Link>
                 </li>
                 {/* Outros itens da lista */}
               </ul>
@@ -114,7 +114,7 @@ const Navbar = () => {
                   onClick={handleNav}
                   className="p-2 text-2xl hover:text-gray-500"
                 >
-                  <Link href="/">Pallet</Link>
+                  <Link href="/pallets">Pallet</Link>
                 </li>
                 {/* Outros itens da lista */}
               </ul>
