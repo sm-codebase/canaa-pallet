@@ -84,7 +84,7 @@ const Empresa = () => {
               <FaGear size={70} color="#00FE00" />
             </div>
             <h1 className="grid text-3xl font-bold text-white p-5">Visão</h1>
-            <p className="grid text-xl font-medium p-5">
+            <p className=" text-xl font-medium p-5">
               Na <b>Canaã Pallets</b>, nossa visão é liderar o mercado de pallets com
               inovação e qualidade incomparáveis, atendendo às necessidades dos
               nossos clientes de forma eficiente e sustentável.
