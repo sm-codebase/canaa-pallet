@@ -104,7 +104,7 @@ function Carousel() {
                 {slides[currentIndex].description}
               </p>
               <li className="grid justify-items-start pt-4">
-                <Link href="/#missao">
+                <Link href="/#valores">
                   <button className="md:w-1/2 w-full h-[40px] rounded-full">
                     Saiba mais
                   </button>

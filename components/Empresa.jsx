@@ -12,7 +12,7 @@ const defaultDescription =
 const Empresa = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slides = [
+  const images = [
     {
       id: 1,
       src: ProdutoImg,
@@ -38,10 +38,10 @@ const Empresa = () => {
           <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
               <h1 className="text-3xl  md:text-4xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
-                {slides[currentIndex].summary}
+                {images[currentIndex].summary}
               </h1>
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
-                {slides[currentIndex].description}
+                {images[currentIndex].description}
               </p>
             </div>
           </div>
