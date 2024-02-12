@@ -2,7 +2,7 @@ import React from "react";
 import SimpleMap from "../components/SimpleMap";
 import Form from "../components/Form";
 
-const contact = () => {
+const trabalheconosco = () => {
   return (
     <div>
       <Form/>
@@ -11,4 +11,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default trabalheconosco;

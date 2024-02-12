@@ -5,7 +5,7 @@ import Contact from "./Contact";
 import { FaGear, FaHelmetSafety } from "react-icons/fa6";
 import { PiPottedPlantFill } from "react-icons/pi";
 
-const defaultSummary = "  Compromisso com o Futuro Sustentável de Todos ";
+const defaultSummary = "Quem somos";
 const defaultDescription =
   "Nosso compromisso reside no cuidado com o futuro de todos. Priorizamos o respeito ao meio ambiente em todas as atividades de nossa indústria de embalagens. Mantemos nossas próprias áreas florestais, além de nos empenharmos na reciclagem e no aproveitamento máximo dos recursos naturais, garantindo a promoção da sustentabilidade em todas as fases de nossa produção.";
 
@@ -18,13 +18,13 @@ const Empresa = () => {
       src: ProdutoImg,
       alt: "Image 1",
       summary: defaultSummary,
-      description: defaultDescription,
+      description: "",
     },
   ];
 
   return (
     <div id="Empresa" className="container mx-auto text-black ">
-      <div className="max-w-full h-[400px] md:h-[700px] w-full m-auto relative group">
+      <div className="max-w-full h-[400px] md:h-[400px] w-full m-auto relative group">
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
             className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -37,7 +37,7 @@ const Empresa = () => {
 
           <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
-              <h1 className="text-3xl  md:text-4xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
+              <h1 className="text-3xl  md:text-5xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
                 {images[currentIndex].summary}
               </h1>
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
@@ -48,7 +48,7 @@ const Empresa = () => {
         </div>
       </div>
       <div className="p-5 md:p-20">
-        <h2 className=" font-sans text-4xl">Quem somos</h2>
+        <h2 className=" font-sans text-4xl"></h2>
         <div className="text-lg font-sans mt-5">
           Há 15 anos, a Canaã Pallets é referência na fabricação de pallets e
           embalagens de madeira, situada em Mogi Guaçu, São Paulo. Comprometida

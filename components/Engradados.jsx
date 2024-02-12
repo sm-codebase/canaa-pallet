@@ -41,7 +41,7 @@ const images = [
     id: 1,
     src: ProdutoImg,
     alt: "Image 1",
-    summary: "Pallets",
+    summary: "Engradados e caixas",
     description: "",
   },
 ];
@@ -82,7 +82,7 @@ function Pallets() {
   }, [isHovered, currentIndex]);
 
   return (
-    <div id="pallets">
+    <div id="engradados">
       <div className="max-w-full h-[400px] md:h-[400px] w-full m-auto ">
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
@@ -173,52 +173,43 @@ function Pallets() {
         </div>
       </div>
 
-      <div
-        style={{ borderRadius: "20px" }}
-        className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white h-full  md:w-[1250px]  mx-auto "
-      >
-        <div className="grid justify-center p-10">
-          <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
+      <div className="grid md:grid-cols-2 gap-5">
+        <div
+          style={{ borderRadius: "20px" }}
+          className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white h-full  md:w-[600px] mx-auto "
+        >
+          <div className="grid justify-center p-10">
+            <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
+          </div>
+
+          <div className="grid text-left  font-sans font-medium text-lg leading-loose mx-10">
+            <h1 className="font-semibold text-xl p-4">Diferencias:</h1>
+            <ul className="list-disc">
+              <li className="p-4">Pallets de Madeira</li>
+              <li className="p-4"> Origem da Madeira</li>
+              <li className="p-4">Pallets Inteligentes</li>
+              <li className="p-4">
+                Conformidade com Padrões de Qualidade e Segurança
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className="grid text-left  font-sans font-medium text-lg leading-loose mx-10">
-          <h1 className="font-semibold text-xl p-4">Vantagens:</h1>
-          <ul className="list-disc">
-            <li className="p-4">
-              Versatilidade: Podem ser utilizados em uma ampla gama de
-              aplicações, desde móveis até construção civil, embalagens,
-              revestimentos e muito mais, devido à sua capacidade de adaptação a
-              diferentes necessidades.
-            </li>
-            <li className="p-4">
-              {" "}
-              Custo-benefício: São geralmente mais acessíveis do que outros
-              materiais, como madeira maciça, o que os torna uma opção econômica
-              para muitos projetos.Sustentabilidade: Feitos a partir de resíduos
-              de madeira reciclada ou de manejo florestal sustentável, os
-              aglomerados são uma escolha amigável ao meio ambiente.
-            </li>
-            <li className="p-4">
-              Uniformidade e estabilidade dimensional: Os aglomerados têm uma
-              estrutura uniforme, o que os torna menos propensos a deformações e
-              variações dimensionais. Isso os torna ideais para aplicações onde
-              a estabilidade é crucial.
-            </li>
-            <li className="p-4">
-              Boa resistência e durabilidade: Dependendo do tipo de aglomerado e
-              do processo de fabricação, eles podem ser bastante resistentes e
-              duráveis, adequados para várias aplicações de uso doméstico e
-              industrial.
-            </li>
-            <li className="p-4">
-              Menor desperdício: Durante o processo de fabricação, é possível
-              reciclar os resíduos gerados, minimizando o desperdício de
-              material.
-            </li>
-          </ul>
+        <div>
+          <div className="max-w-full h-[500px] md:h-[500px] md:w-[600px] m-auto ">
+            <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity ">
+              <Image
+                className="rounded-xl"
+                src={ProdutoImg}
+                alt={"/"}
+                layout="fill"
+                objectFit="cover"
+                priority // Add the priority property
+              />
+            </div>
+          </div>
         </div>
       </div>
-
       <Contact />
     </div>
   );
