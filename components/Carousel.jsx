@@ -70,7 +70,7 @@ function Carousel() {
       // Auto-scroll every 5 seconds (adjust the interval as needed)
       intervalId = setInterval(() => {
         nextSlide();
-      }, 1000);
+      }, 5000);
     }
 
     return () => {

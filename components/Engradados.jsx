@@ -5,10 +5,11 @@ import primg1 from "../public/assets/carousel/pr-img-1.jpg";
 import primg2 from "../public/assets/carousel/pr-img-2.jpg";
 import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 import primg4 from "../public/assets/carousel/pr-img-4.jpg";
-import ProdutoImg from "../public/assets/empresa-1.jpg";
+import ProdutoImg from "../public/assets/empresa-12.jpg";
+import ProdutoImg1 from "../public/assets/empresa-13.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
-import Logo from "../public/assets/carousel/logo.png";
+import Logo from "../public/assets/logo.png";
 
 const defaultSummary = "Pallets";
 const defaultDescription = "";
@@ -83,7 +84,7 @@ function Pallets() {
 
   return (
     <div id="engradados">
-      <div className="max-w-full h-[400px] md:h-[400px] w-full m-auto ">
+      <div className="max-w-full h-[400px] md:h-[450px] w-full m-auto ">
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
             className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -141,7 +142,7 @@ function Pallets() {
         </div>
       </div>
       <div className="">
-        <div className="p-10 font-sans text-lg text-gray-900 leading-8 ">
+        <div className="md:m-20 p-5 font-medium text-xl text-gray-900 leading-8 ">
           <p className="">
             A Canna Pallets é uma empresa reconhecida por fornecer uma ampla
             variedade de soluções de pallets adequadas para atender às demandas
@@ -173,10 +174,10 @@ function Pallets() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-2 items-center gap-5 bg-gray-200 w-full h-full p-5 md:h-[700px]">
         <div
           style={{ borderRadius: "20px" }}
-          className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white h-full  md:w-[600px] mx-auto "
+          className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white  h-[500px] md:w-[600px] mx-auto"
         >
           <div className="grid justify-center p-10">
             <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
@@ -196,11 +197,11 @@ function Pallets() {
         </div>
 
         <div>
-          <div className="max-w-full h-[500px] md:h-[500px] md:w-[600px] m-auto ">
-            <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity ">
+          <div className="max-w-full h-[500px] md:h-[500px] md:w-[600px] mx-auto">
+            <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity">
               <Image
                 className="rounded-xl"
-                src={ProdutoImg}
+                src={ProdutoImg1}
                 alt={"/"}
                 layout="fill"
                 objectFit="cover"
@@ -210,7 +211,9 @@ function Pallets() {
           </div>
         </div>
       </div>
+      <div>
       <Contact />
+      </div>
     </div>
   );
 }

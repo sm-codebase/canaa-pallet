@@ -35,9 +35,9 @@ const Empresa = () => {
             priority // Add the priority property
           />
 
-          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
+          <div className=" p-5 md:grid grid-cols-3 md:p-20 mt-16 flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
-              <h1 className="text-3xl  md:text-5xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
+              <h1 className="text-4xl  md:text-5xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
                 {images[currentIndex].summary}
               </h1>
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">

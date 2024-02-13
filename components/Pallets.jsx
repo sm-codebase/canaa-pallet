@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import primg1 from "../public/assets/carousel/pr-img-1.jpg";
-import primg2 from "../public/assets/carousel/pr-img-2.jpg";
-import primg3 from "../public/assets/carousel/pr-img-3.jpg";
-import primg4 from "../public/assets/carousel/pr-img-4.jpg";
-import ProdutoImg from "../public/assets/empresa-1.jpg";
+import primg1 from "../public/assets/carousel/image-1.jpg";
+import primg2 from "../public/assets/carousel/image-2.jpg";
+import primg3 from "../public/assets/carousel/image-3.jpg";
+import primg4 from "../public/assets/carousel/image-4.jpg";
+import ProdutoImg from "../public/assets/empresa-12.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
-import Logo from "../public/assets/carousel/logo.png";
+import Logo from "../public/assets/logo.png";
 
 const defaultSummary = "Pallets";
 const defaultDescription = "";
@@ -83,7 +83,7 @@ function Pallets() {
 
   return (
     <div id="pallets">
-      <div className="max-w-full h-[400px] md:h-[400px] w-full m-auto ">
+      <div className="max-w-full h-[400px] md:h-[450px] w-full m-auto ">
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
             className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -141,7 +141,7 @@ function Pallets() {
         </div>
       </div>
       <div className="">
-        <div className="p-10 font-sans text-lg text-gray-900 leading-8 ">
+        <div className="md:m-20 p-5 font-medium text-xl leading-8 ">
           <p className="">
             A Canna Pallets é uma empresa reconhecida por fornecer uma ampla
             variedade de soluções de pallets adequadas para atender às demandas

@@ -1,11 +1,11 @@
 import React from "react";
 import SimpleMap from "../components/SimpleMap";
-import Form from "../components/Form";
+import TrabalheConosco from "../components/TrabalheConosco";
 
 const trabalheconosco = () => {
   return (
     <div>
-      <Form/>
+      <TrabalheConosco />
       <SimpleMap />
     </div>
   );

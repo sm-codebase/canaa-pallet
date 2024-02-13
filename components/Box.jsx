@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../public/assets/carousel/logo.png";
+import Logo from "../public/assets/logo.png";
 
 const Box = () => {
   return (

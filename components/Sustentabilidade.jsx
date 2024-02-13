@@ -1,18 +1,29 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import ProdutoImg from "../public/assets/empresa.png";
+import ProdutoImg from "../public/assets/empresa-12.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
 import Cert1 from "../public/assets/cetifications/iso-9001.png";
 import Cert2 from "../public/assets/cetifications/bureau-veritas.png";
 import { FaGear, FaHelmetSafety } from "react-icons/fa6";
 import { PiPottedPlantFill } from "react-icons/pi";
+import { MdArrowRightAlt } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
 
 const defaultSummary = "  Compromisso com o Futuro Sustentável de Todos ";
 const defaultDescription =
   "Nosso compromisso reside no cuidado com o futuro de todos. Priorizamos o respeito ao meio ambiente em todas as atividades de nossa indústria de embalagens. Mantemos nossas próprias áreas florestais, além de nos empenharmos na reciclagem e no aproveitamento máximo dos recursos naturais, garantindo a promoção da sustentabilidade em todas as fases de nossa produção.";
 
 const Sustentabilidade = () => {
+  const [isPara1Visible, setPara1Visible] = useState(false);
+  const [isPara1Visible2, setPara1Visible2] = useState(false);
+
+  const togglePara1Visibility = () => {
+    setPara1Visible(!isPara1Visible);
+  };
+  const togglePara2Visibility = () => {
+    setPara1Visible2(!isPara1Visible2);
+  };
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
@@ -38,7 +49,7 @@ const Sustentabilidade = () => {
             priority // Add the priority property
           />
 
-          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-    animate-fade-in drop-shadow-lg h-full w-full">
+          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
               <h1 className="text-3xl  md:text-4xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
                 {slides[currentIndex].summary}
@@ -54,7 +65,7 @@ const Sustentabilidade = () => {
       <div className="bg-gray-300 h-full">
         <div
           style={{ borderRadius: "60px" }}
-          className="bg-gray-800 text-white  md:w-[1250px] md:h-[550px]  mx-auto relative -mt-32 "
+          className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white  md:w-[1250px] md:h-[550px]  mx-auto relative -mt-32 "
         >
           <div className="grid justify-center p-10 mt-10 ">
             <div className="md:flex grid justify-center gap-5 ">
@@ -81,7 +92,7 @@ const Sustentabilidade = () => {
             </div>
           </div>
 
-          <div className="grid text-center p-10  font-bold text-xl leading-loose">
+          <div className="grid text-center p-10  font-medium text-xl leading-loose">
             <p>
               Nossa estratégia ambiental inclui controlar e reduzir a emissão de
               gases do efeito estufa em todos os nossos processos. Conforme
@@ -89,6 +100,58 @@ const Sustentabilidade = () => {
               toneladas de CO2 da atmosfera e contribuem para diminuir os
               efeitos dos gases estufa, contribuindo na melhoria das mudanças
               climáticas em nosso planeta.
+            </p>
+          </div>
+        </div>
+
+        <div className="p-5 md:grid  gap-4 text-white">
+          <div className="rounded-lg p-4 mt-4 md:w-[800px] mx-auto bg-emerald-600">
+            <div 
+              onClick={togglePara1Visibility}
+              className="flex items-center cursor-pointer"
+            >
+              <IoIosArrowDown />
+              <h2 className="p-2 font-bold text-2xl">
+                Madeiras de reflorestamento
+              </h2>
+            </div>
+            <p
+              id="para1"
+              className={`p-4 ${isPara1Visible ? "block" : "hidden"}`}
+            >
+              As madeiras de reflorestamento são fundamentais para a preservação
+              ambiental e o desenvolvimento sustentável. Originadas de áreas
+              replantadas, essas madeiras promovem a conservação de ecossistemas
+              naturais e reduzem a pressão sobre florestas nativas. Além disso,
+              contribuem para a economia local e global, oferecendo uma
+              alternativa ecologicamente correta para a produção de diversos
+              produtos. Investir em madeiras de reflorestamento é investir no
+              futuro do nosso planeta, garantindo recursos renováveis e um
+              ambiente equilibrado para as gerações futuras.
+            </p>
+          </div>
+
+          <div className="rounded-lg p-4 mt-4 md:w-[800px] mx-auto bg-blue-500">
+            <div
+              onClick={togglePara2Visibility}
+              className="flex items-center cursor-pointer"
+            >
+              <IoIosArrowDown />
+              <h2 className="p-2 font-bold text-2xl">Energia renovavel</h2>
+            </div>
+            <p
+              id="para1"
+              className={`p-4 ${isPara1Visible2 ? "block" : "hidden"}`}
+            >
+              A energia renovável é uma fonte vital para o futuro sustentável do
+              nosso planeta. Derivada de recursos naturais como sol, vento, água
+              e biomassa, ela oferece uma alternativa limpa e inesgotável às
+              fontes tradicionais de energia. Além de reduzir as emissões de
+              gases de efeito estufa, a energia renovável promove a
+              independência energética e estimula a inovação tecnológica.
+              Investir em fontes renováveis não apenas impulsiona o
+              desenvolvimento econômico, mas também preserva os ecossistemas e
+              melhora a qualidade de vida das comunidades locais e globais.
             </p>
           </div>
         </div>
