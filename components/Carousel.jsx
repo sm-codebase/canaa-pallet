@@ -3,13 +3,11 @@ import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import primg1 from "../public/assets/carousel/pr-img-1.jpg";
 import primg2 from "../public/assets/carousel/pr-img-2.jpg";
-import primg3 from "../public/assets/carousel/pr-img-3.jpg";
-import primg4 from "../public/assets/carousel/pr-img-4.jpg";
 import Link from "next/link";
 
-const defaultSummary = "Sustentabilidade e qualidade: uma parceria inseparável e essencial ";
+const defaultSummary = "Bem-vindo ao Novo Capítulo Digital!";
 const defaultDescription =
-  "Na nossa empresa, priorizamos a sustentabilidade e a qualidade em todos os nossos produtos. Fabricamos cuidadosamente nossas peças e embalagens de madeira, garantindo que cada uma delas atenda aos mais altos padrões de responsabilidade ambiental. Com a certificação ISO, podemos assegurar não apenas a qualidade excepcional de nossos produtos, mas também o compromisso com práticas sustentáveis.";
+  "Estamos empolgados em apresentar nosso novo site! Explore as inovações, descubra conteúdos exclusivos e mergulhe em uma experiência digital aprimorada.";
 
 const slides = [
   {
@@ -19,23 +17,11 @@ const slides = [
     summary: defaultSummary,
     description: defaultDescription,
   },
+ 
+  
   {
     id: 2,
     src: primg2,
-    alt: "Image 2",
-    summary: defaultSummary,
-    description: defaultDescription,
-  },
-  {
-    id: 3,
-    src: primg3,
-    alt: "Image 3",
-    summary: defaultSummary,
-    description: defaultDescription,
-  },
-  {
-    id: 4,
-    src: primg4,
     alt: "Image 4",
     summary: defaultSummary,
     description: defaultDescription,
@@ -80,7 +66,7 @@ function Carousel() {
   return (
     <div className="relative">
       <div
-        className="max-w-full h-[750px] md:h-[900px] w-full m-auto relative group"
+        className="max-w-full h-full md:h-[900px] w-full m-auto relative group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -105,7 +91,7 @@ function Carousel() {
               <li className="grid justify-items-start">
                 <Link href="/#missao">
                   <button className="md:w-1/2 w-full h-[40px] rounded-full mt-10 ">
-                    Saiba mais
+                    Em Breve
                   </button>
                 </Link>
               </li>
