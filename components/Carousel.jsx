@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import primg1 from "../public/assets/carousel/pr-img-1.jpg";
-import primg2 from "../public/assets/carousel/pr-img-2.jpg";
+import primg1 from "../public/assets/carousel/image-4.jpg";
+import primg2 from "../public/assets/carousel/image-22.jpg";
 import primg3 from "../public/assets/carousel/pr-img-3.jpg";
-import primg4 from "../public/assets/carousel/pr-img-4.jpg";
+import primg4 from "../public/assets/carousel/image-11.jpg";
 import Link from "next/link";
+import logo1 from "../public/assets/logo-white.png";
 
-const defaultSummary =
-  "Sustentabilidade e qualidade: uma parceria inseparável e essencial ";
+const defaultSummary = "Sustentabilidade e qualidade:  ";
 const defaultDescription =
-  "Na nossa empresa, priorizamos a sustentabilidade e a qualidade em todos os nossos produtos. Fabricamos cuidadosamente nossas peças e embalagens de madeira, garantindo que cada uma delas atenda aos mais altos padrões de responsabilidade ambiental. Com a certificação ISO, podemos assegurar não apenas a qualidade excepcional de nossos produtos, mas também o compromisso com práticas sustentáveis.";
+  "Uma parceria inseparável e essencial Na nossa empresa, priorizamos a sustentabilidade e a qualidade em todos os nossos produtos. Fabricamos cuidadosamente nossas pallets e embalagens de madeira, garantindo que cada uma delas atenda aos mais altos padrões de responsabilidade ambiental. Com a certificação ISO, podemos assegurar não apenas a qualidade excepcional de nossos produtos, mas também o compromisso com práticas sustentáveis.";
 
 const slides = [
   {
@@ -95,7 +95,7 @@ function Carousel() {
             priority // Add the priority property
           />
 
-          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
+          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16 animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
               <h1 className="text-3xl  md:text-4xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
                 {slides[currentIndex].summary}

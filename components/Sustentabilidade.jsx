@@ -3,16 +3,15 @@ import Image from "next/image";
 import ProdutoImg from "../public/assets/empresa-12.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
-import Cert1 from "../public/assets/cetifications/iso-9001.png";
-import Cert2 from "../public/assets/cetifications/bureau-veritas.png";
+import Cert11 from "../public/assets/cetifications/logo-11.jpg";
 import { FaGear, FaHelmetSafety } from "react-icons/fa6";
 import { PiPottedPlantFill } from "react-icons/pi";
 import { MdArrowRightAlt } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 
-const defaultSummary = "  Compromisso com o Futuro Sustentável de Todos ";
+const defaultSummary = "  COMPROMISSO COM A  SUSTENTABILIDADE: ";
 const defaultDescription =
-  "Nosso compromisso reside no cuidado com o futuro de todos. Priorizamos o respeito ao meio ambiente em todas as atividades de nossa indústria de embalagens. Mantemos nossas próprias áreas florestais, além de nos empenharmos na reciclagem e no aproveitamento máximo dos recursos naturais, garantindo a promoção da sustentabilidade em todas as fases de nossa produção.";
+  "Desde o início, na Canaã Pallets, priorizamos a preservação ambiental, utilizando apenas madeira de reflorestamento para nossos produtos. Para ampliar nosso compromisso sustentável, investimos em energia fotovoltaica, o que nos permite ter processos mais limpos. Essa iniciativa evita anualmente a emissão de 183,48 toneladas de CO², equivalente ao plantio de 10.480 árvores. Estamos olhando para o futuro de forma responsável.";
 
 const Sustentabilidade = () => {
   const [isPara1Visible, setPara1Visible] = useState(false);
@@ -37,7 +36,7 @@ const Sustentabilidade = () => {
   ];
 
   return (
-    <div id="sustentabilidade" className="container mx-auto text-black ">
+    <div id="sustentabilidade" className=" mx-auto text-black ">
       <div className="max-w-full h-[700px] md:h-[700px] w-full m-auto relative group">
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
@@ -72,21 +71,10 @@ const Sustentabilidade = () => {
               <div className="">
                 <Image
                   className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                  src={Cert1}
+                  src={Cert11}
                   alt="iso-9001"
-                  width={150}
-                  height={150}
-                  style={{ borderRadius: "100px" }}
-                />
-              </div>
-              <div className="">
-                <Image
-                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                  src={Cert2}
-                  alt="bureau-veritas"
-                  width={150}
-                  height={150}
-                  style={{ borderRadius: "100px" }}
+                  width={300}
+                  height={200}
                 />
               </div>
             </div>
@@ -105,8 +93,8 @@ const Sustentabilidade = () => {
         </div>
 
         <div className="p-5 md:grid  gap-4 text-white">
-          <div className="rounded-lg p-4 mt-4 md:w-[800px] mx-auto bg-emerald-600">
-            <div 
+          <div className="rounded-lg p-4 mt-4 md:w-[800px] mx-auto bg-gray-400">
+            <div
               onClick={togglePara1Visibility}
               className="flex items-center cursor-pointer"
             >
@@ -131,7 +119,7 @@ const Sustentabilidade = () => {
             </p>
           </div>
 
-          <div className="rounded-lg p-4 mt-4 md:w-[800px] mx-auto bg-blue-500">
+          <div className="rounded-lg p-4 mt-4 md:w-[800px] mx-auto bg-gray-400">
             <div
               onClick={togglePara2Visibility}
               className="flex items-center cursor-pointer"
@@ -157,14 +145,14 @@ const Sustentabilidade = () => {
         </div>
 
         <div>
-          <div className="container   text-white  w-full h-full md:h-[700px]">
+          <div className=" text-white  w-full h-full md:h-[700px]">
             <div className="flex flex-col md:flex-row justify-center items-center w-full h-full gap-5 p-10">
               <div
                 style={{ borderRadius: "20px", transition: "all 0.4s" }}
-                className="bg-teal-500 w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-green-500"
+                className="bg-[#048f1a] w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-green-600"
               >
                 <div className="p-5">
-                  <FaGear size={70} color="#00FE00" />
+                  <FaGear size={70} color="white" />
                 </div>
                 <h1 className="grid text-3xl font-bold text-white p-5">
                   Visão
@@ -179,10 +167,10 @@ const Sustentabilidade = () => {
 
               <div
                 style={{ borderRadius: "20px", transition: "all 0.4s" }}
-                className="bg-teal-500 w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-green-500 "
+                className="bg-[#048f1a] w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-green-600 "
               >
                 <div className="p-5">
-                  <PiPottedPlantFill size={80} color="#00FE00" />
+                  <PiPottedPlantFill size={80} color="white" />
                 </div>
                 <h1 className="grid text-3xl font-bold text-white p-5">
                   Nossa Missão
@@ -197,10 +185,10 @@ const Sustentabilidade = () => {
 
               <div
                 style={{ borderRadius: "20px", transition: "all 0.4s" }}
-                className="bg-teal-500 w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-green-500"
+                className="bg-[#048f1a] w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-green-600"
               >
                 <div className=" p-5">
-                  <FaHelmetSafety size={70} color="#00FE00" />
+                  <FaHelmetSafety size={70} color="white" />
                 </div>
                 <h1 className="grid text-3xl font-bold text-white p-5">
                   Valores

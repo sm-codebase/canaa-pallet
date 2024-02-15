@@ -20,7 +20,7 @@ export default function Home() {
       <Valores />
       <SimpleMap />
       <Contact />
-      <Whatsapp />
+      
     </div>
   );
 }

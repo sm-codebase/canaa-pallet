@@ -5,7 +5,7 @@ import primg1 from "../public/assets/carousel/image-1.jpg";
 import primg2 from "../public/assets/carousel/image-2.jpg";
 import primg3 from "../public/assets/carousel/image-3.jpg";
 import primg4 from "../public/assets/carousel/image-4.jpg";
-import ProdutoImg from "../public/assets/empresa-12.jpg";
+import ProdutoImg from "../public/assets/carousel/image-3.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
 import Logo from "../public/assets/logo.png";
@@ -151,15 +151,13 @@ function Pallets() {
             incluindo automotiva, alimentícia, papelaria, farmacêutica, química,
             petroquímica, eletroeletrônica, bens de consumo e outros. Para cada
             um desses setores, a Canna Pallets desenvolveu pallets específicos
-            que atendem aos mais altos padrões de qualidade e segurança.
+            que atendem aos mais altos padrões de qualidade e segurança. Nossos
+            pallets são projetados para garantir a integridade dos produtos
+            durante o transporte, armazenamento e manuseio, além de estarem em
+            conformidade com as regulamentações e normas exigidas por cada
+            mercado.
           </p>{" "}
-          <p>
-            Nossos pallets são projetados para garantir a integridade dos
-            produtos durante o transporte, armazenamento e manuseio, além de
-            estarem em conformidade com as regulamentações e normas exigidas por
-            cada mercado.
-          </p>
-          <p>
+          <p className="mt-5">
             {" "}
             No segmento automotivo, por exemplo, a Canna Pallets oferece
             soluções robustas e duráveis para proteger peças e componentes,

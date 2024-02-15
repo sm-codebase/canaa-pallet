@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Cert1 from "../public/assets/cetifications/iso-9001.png";
-import Cert2 from "../public/assets/cetifications/bureau-veritas.png";
+import Cert11 from "../public/assets/cetifications/logo-11.jpg";
 
 const Certifications = () => {
   return (
@@ -10,18 +9,9 @@ const Certifications = () => {
         <div className="">
           <Image
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src={Cert1}
+            src={Cert11}
             alt="iso-9001"
-            width={150}
-            height={200}
-          />
-        </div>
-        <div className="">
-          <Image
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src={Cert2}
-            alt="bureau-veritas"
-            width={150}
+            width={300}
             height={200}
           />
         </div>
