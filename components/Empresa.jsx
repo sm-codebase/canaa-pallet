@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProdutoImg from "../public/assets/empresa-33.jpg";
+import ProdutoImg from "../public/assets/empresa-34.jpg";
 import ProdutoImg1 from "../public/assets/empresa-33.jpg";
 import ProdutoImg2 from "../public/assets/empresa-22.jpg";
 import ProdutoImg3 from "../public/assets/empresa-23.jpg";
@@ -153,7 +153,7 @@ const Empresa = () => {
             />
 
             <div className="    flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
-              <div className="bg-blue-500 w-full h-[100px] flex items-center px-5">
+              <div className="bg-gray-400 w-full md:h-[100px] flex items-center px-5">
                 <FaMapMarkerAlt color="green" />
                 <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
                   {images1[currentIndex].summary}
@@ -178,7 +178,7 @@ const Empresa = () => {
             />
 
             <div className="flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
-              <div className="bg-blue-500 w-full h-[100px] flex items-center px-5">
+              <div className="bg-gray-400 w-full md:h-[100px] flex items-center px-5">
                 <FaMapMarkerAlt color="green" />
                 <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
                   {images1[currentIndex].summary}
@@ -191,7 +191,7 @@ const Empresa = () => {
           </div>
         </div>
 
-        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group">
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group my-10">
           <div className="w-full h-full bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
             <Image
               className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -203,7 +203,7 @@ const Empresa = () => {
             />
 
             <div className="    flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
-              <div className="bg-blue-500 w-full h-[100px] flex items-center px-5">
+              <div className="bg-gray-400 w-full md:h-[100px] flex items-center px-5">
                 <FaMapMarkerAlt color="green" />
                 <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
                   {images1[currentIndex].summary}

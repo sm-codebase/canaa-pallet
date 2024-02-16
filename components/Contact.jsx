@@ -44,7 +44,7 @@ const Contact = () => {
                 Selecione o Assunto
               </option>
               <option value="Compra de Pallet">Compra de Pallet</option>
-              <option value="RH">RH</option>
+
               <option value="Comercial">Comercial</option>
               {/* Adicione outras opções conforme necessário */}
             </select>
