@@ -211,9 +211,6 @@ function Pallets() {
           </div>
         </div>
       </div>
-      <div>
-      <Contact />
-      </div>
     </div>
   );
 }

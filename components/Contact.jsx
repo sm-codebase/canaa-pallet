@@ -56,12 +56,7 @@ const Contact = () => {
               name="mensagem"
               required
             />
-            <input
-              type="file"
-              name="files[]"
-              multiple
-              className="border shadow-lg p-3 w-full my-2"
-            />
+
             <div className="grid  justify-items-center">
               <button className="border shadow-lg p-2 w-[200px] rounded-3xl mt-4">
                 Enviar
@@ -70,15 +65,17 @@ const Contact = () => {
           </form>
         </div>
         <div className="flex flex-col gap-6 p-8">
-          <h1 className="text-4xl font-bold">fale conosco!</h1>
+          <h1 className="text-4xl font-bold">Fale conosco!</h1>
           <p>Tenho a melhor solução para o seu negócio.</p>
           <div>
             <p className="font-bold">Endereço</p>
-            <p>Rua Joaquim de Seabra, n° 515, Mogi-Guaçu, SP, Brazil</p>
+            <p>
+              Rua Joaquim de Seabra, n° 515, Mogi-Guaçu, SP, Brazil, 13848-622
+            </p>
           </div>
           <div>
             <p className="font-bold">Contato</p>
-            <p>(19) 3861.2511 |  (19) 99660.7262 | canaa@canaapallets.com.br</p>
+            <p>(19) 3861.2511 | (19) 99660.7262 | canaa@canaapallets.com.br</p>
           </div>
         </div>
       </div>

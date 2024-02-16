@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProdutoImg from "../public/assets/empresa-12.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
-import Cert11 from "../public/assets/cetifications/logo-11.jpg";
+import Cert11 from "../public/assets/cetifications/logo-22.png";
 import { FaGear, FaHelmetSafety } from "react-icons/fa6";
 import { PiPottedPlantFill } from "react-icons/pi";
 import { MdArrowRightAlt } from "react-icons/md";
@@ -61,7 +61,7 @@ const Sustentabilidade = () => {
         </div>
       </div>
 
-      <div className="bg-gray-300 h-full">
+      <div className="bg-gray-300 h-full ">
         <div
           style={{ borderRadius: "60px" }}
           className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white  md:w-[1250px] md:h-[550px]  mx-auto relative -mt-32 "
@@ -205,7 +205,6 @@ const Sustentabilidade = () => {
           </div>
         </div>
       </div>
-      <Contact />
     </div>
   );
 };

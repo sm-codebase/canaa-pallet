@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import ProdutoImg from "../public/assets/empresa-12.jpg";
+import ProdutoImg from "../public/assets/empresa-33.jpg";
+import ProdutoImg1 from "../public/assets/empresa-33.jpg";
+import ProdutoImg2 from "../public/assets/empresa-22.jpg";
+import ProdutoImg3 from "../public/assets/empresa-23.jpg";
 import Image from "next/image";
-import Contact from "./Contact";
 import { FaGear, FaHelmetSafety } from "react-icons/fa6";
 import { PiPottedPlantFill } from "react-icons/pi";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const defaultSummary = "Quem somos";
 const defaultDescription =
   "Nosso compromisso reside no cuidado com o futuro de todos. Priorizamos o respeito ao meio ambiente em todas as atividades de nossa indústria de embalagens. Mantemos nossas próprias áreas florestais, além de nos empenharmos na reciclagem e no aproveitamento máximo dos recursos naturais, garantindo a promoção da sustentabilidade em todas as fases de nossa produção.";
+const endereço = "Mogi guaçu -";
 
 const Empresa = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,6 +23,29 @@ const Empresa = () => {
       alt: "Image 1",
       summary: defaultSummary,
       description: "",
+    },
+  ];
+  const images1 = [
+    {
+      id: 2,
+      src: ProdutoImg1,
+      alt: "Image 1",
+      summary: endereço,
+      description: "Rua Joaquim de Seabra, n° 515",
+    },
+    {
+      id: 3,
+      src: ProdutoImg2,
+      alt: "Image 2",
+      summary: endereço,
+      description: "Rua Joaquim de Seabra, n° 515",
+    },
+    {
+      id: 4,
+      src: ProdutoImg3,
+      alt: "Image 3",
+      summary: endereço,
+      description: "Rua Joaquim de Seabra, n° 515",
     },
   ];
 
@@ -113,8 +140,81 @@ const Empresa = () => {
         </div>
       </div>
 
-      <div>
-        <Contact />
+      <div className="md:grid grid-cols-3 mt-10">
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto ">
+          <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
+            <Image
+              className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
+              src={ProdutoImg1}
+              alt={"/"}
+              layout="fill"
+              objectFit="cover"
+              priority // Add the priority property
+            />
+
+            <div className="    flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
+              <div className="bg-blue-500 w-full h-[100px] flex items-center px-5">
+                <FaMapMarkerAlt color="green" />
+                <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
+                  {images1[currentIndex].summary}
+                </h1>
+                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
+                  {images1[currentIndex].description}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group my-10">
+          <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
+            <Image
+              className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
+              src={ProdutoImg2}
+              alt={"/"}
+              layout="fill"
+              objectFit="cover"
+              priority // Add the priority property
+            />
+
+            <div className="flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
+              <div className="bg-blue-500 w-full h-[100px] flex items-center px-5">
+                <FaMapMarkerAlt color="green" />
+                <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
+                  {images1[currentIndex].summary}
+                </h1>
+                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
+                  {images1[currentIndex].description}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group">
+          <div className="w-full h-full bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
+            <Image
+              className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
+              src={ProdutoImg3}
+              alt={"/"}
+              layout="fill"
+              objectFit="cover"
+              priority // Add the priority property
+            />
+
+            <div className="    flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
+              <div className="bg-blue-500 w-full h-[100px] flex items-center px-5">
+                <FaMapMarkerAlt color="green" />
+                <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
+                  {images1[currentIndex].summary}
+                </h1>
+                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
+                  {images1[currentIndex].description}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

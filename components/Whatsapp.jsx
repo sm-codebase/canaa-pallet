@@ -3,7 +3,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Whatsapp = () => {
   const HandleClick = () => {
-    window.open("https://api.whatsapp.com/send?phone=5519989331908");
+    window.open("https://linktr.ee/canaapallets");
   };
   return (
     <div>

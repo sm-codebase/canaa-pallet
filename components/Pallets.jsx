@@ -179,7 +179,7 @@ function Pallets() {
           <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
         </div>
 
-        <div className="grid text-left  font-sans font-medium text-lg leading-loose mx-10">
+        <div className="grid text-left  font-sans font-medium text-lg leading-loose mx-10 my-10">
           <h1 className="font-semibold text-xl p-4">Vantagens:</h1>
           <ul className="list-disc">
             <li className="p-4">
@@ -216,8 +216,6 @@ function Pallets() {
           </ul>
         </div>
       </div>
-
-      <Contact />
     </div>
   );
 }
