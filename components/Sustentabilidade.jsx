@@ -61,7 +61,7 @@ const Sustentabilidade = () => {
         </div>
       </div>
 
-      <div className="bg-gray-300 h-full ">
+      <div className="bg-gray-300 h-full my-10">
         <div
           style={{ borderRadius: "60px" }}
           className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white  md:w-[1250px] md:h-[550px]  mx-auto relative -mt-32 "

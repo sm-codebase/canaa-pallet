@@ -11,7 +11,10 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const defaultSummary = "Quem somos";
 const defaultDescription =
   "Nosso compromisso reside no cuidado com o futuro de todos. Priorizamos o respeito ao meio ambiente em todas as atividades de nossa indústria de embalagens. Mantemos nossas próprias áreas florestais, além de nos empenharmos na reciclagem e no aproveitamento máximo dos recursos naturais, garantindo a promoção da sustentabilidade em todas as fases de nossa produção.";
-const endereço = "Mogi guaçu -";
+const endereço = "Mogi guaçu ";
+const rua1 = "Rua Joaquim de Seabra, 515/525 - Jd. Nova Canaã";
+const rua2 = "Rua Waldomiro Garcia de Oliveira, 87 - Jd. Nova Canaã";
+const rua3 = "Rua Joaquim de Seabra, 19 - LT 19 QD B - Jd. Nova Canaã";
 
 const Empresa = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,25 +30,29 @@ const Empresa = () => {
   ];
   const images1 = [
     {
-      id: 2,
+      id: 1,
       src: ProdutoImg1,
       alt: "Image 1",
       summary: endereço,
-      description: "Rua Joaquim de Seabra, n° 515",
+      description: "Rua Joaquim de Seabra, 515/525 - Jd. Nova Canaã | Cep: 13.848-622",
     },
+  ];
+    const images2 = [
     {
-      id: 3,
+      id: 2,
       src: ProdutoImg2,
       alt: "Image 2",
       summary: endereço,
-      description: "Rua Joaquim de Seabra, n° 515",
+      description: "Rua Waldomiro Garcia de Oliveira, 87 - Jd. Nova Canaã | Cep:  13.848-650",
     },
+  ];
+    const images3 = [
     {
-      id: 4,
+      id: 3,
       src: ProdutoImg3,
       alt: "Image 3",
       summary: endereço,
-      description: "Rua Joaquim de Seabra, n° 515",
+      description: "Rua Joaquim de Seabra, 19 - LT 19 QD B - Jd. Nova Canaã | Cep: 13.848-622",
     },
   ];
 
@@ -153,20 +160,22 @@ const Empresa = () => {
             />
 
             <div className="    flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
-              <div className="bg-gray-400 w-full md:h-[100px] flex items-center px-5">
-                <FaMapMarkerAlt color="green" />
-                <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
-                  {images1[currentIndex].summary}
-                </h1>
-                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
-                  {images1[currentIndex].description}
-                </p>
+            <div className="bg-gray-400 w-full md:h-[100px]  p-4">
+            <div className="flex items-center">
+              <FaMapMarkerAlt color="green" />
+              <h1 className=" mx-2 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
+                {images1[currentIndex].summary}
+              </h1>
               </div>
+              <p className="text-white  text-base font-medium font-mono md:leading-">
+                {images1[currentIndex].description}
+              </p>
             </div>
+          </div>
           </div>
         </div>
 
-        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group my-10">
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group ">
           <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
             <Image
               className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -178,20 +187,22 @@ const Empresa = () => {
             />
 
             <div className="flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
-              <div className="bg-gray-400 w-full md:h-[100px] flex items-center px-5">
+              <div className="bg-gray-400 w-full md:h-[100px]  p-4">
+              <div className="flex items-center">
                 <FaMapMarkerAlt color="green" />
-                <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
-                  {images1[currentIndex].summary}
+                <h1 className=" mx-2 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
+                  {images2[currentIndex].summary}
                 </h1>
-                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
-                  {images1[currentIndex].description}
+                </div>
+                <p className="text-white  text-base font-medium font-mono md:leading-">
+                  {images2[currentIndex].description}
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group my-10">
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group ">
           <div className="w-full h-full bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
             <Image
               className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -202,14 +213,16 @@ const Empresa = () => {
               priority // Add the priority property
             />
 
-            <div className="    flex items-end  animate-fade-in drop-shadow-lg h-full w-full">
-              <div className="bg-gray-400 w-full md:h-[100px] flex items-center px-5">
+            <div className="flex items-end  animate-fade-in drop-shadow-lg h-full w-full ">
+              <div className="bg-gray-400 w-full md:h-[100px] p-4  ">
+              <div className="flex items-center">
                 <FaMapMarkerAlt color="green" />
-                <h1 className="flex p-3 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
-                  {images1[currentIndex].summary}
+                <h1 className=" mx-2 text-xl  bg-clip-text font-bold text-transparent bg-white drop-shadow-2xl">
+                  {images3[currentIndex].summary}
                 </h1>
-                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
-                  {images1[currentIndex].description}
+                </div>
+                <p className="text-white  text-base font-medium font-mono md:leading-">
+                  {images3[currentIndex].description}
                 </p>
               </div>
             </div>

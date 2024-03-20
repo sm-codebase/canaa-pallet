@@ -42,6 +42,10 @@ const Navbar = () => {
             />
           </a>
         </Link>
+
+        <p className="text-black hidden sm:block">
+          Nosso produto é a base para os seus negócios
+        </p>
         {/* Mobile button */}
         <div onClick={handleNav} className="block z-10">
           <Hamburger color="gray" toggled={nav} toggle={setNav} />
