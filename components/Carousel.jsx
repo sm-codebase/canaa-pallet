@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import primg1 from "../public/assets/carousel/image-4.jpg";
-import primg2 from "../public/assets/carousel/image-22.jpg";
+import primg1 from "../public/assets/carousel/pr-img-1.jpg";
+import primg2 from "../public/assets/carousel/pr-img-2.jpg";
 import primg3 from "../public/assets/carousel/pr-img-3.jpg";
-import primg4 from "../public/assets/carousel/image-11.jpg";
+import primg4 from "../public/assets/carousel/pr-img-4.jpg";
 import Link from "next/link";
 import logo1 from "../public/assets/logo-white.png";
 
