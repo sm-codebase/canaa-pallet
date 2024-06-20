@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import primg1 from "../public/assets/carousel/img-1.jpg";
-import primg2 from "../public/assets/carousel/img-2.jpg";
-import primg3 from "../public/assets/carousel/img-3.jpg";
-import primg4 from "../public/assets/carousel/img-4.jpg";
-import ProdutoImg from "../public/assets/carousel/image-1.jpg";
+import primg1 from "../public/assets/engradados/img-1.jpg";
+import primg2 from "../public/assets/engradados/img-2.jpg";
+import primg3 from "../public/assets/engradados/img-3.jpg";
+import primg4 from "../public/assets/engradados/img-4.jpg";
+import primg5 from "../public/assets/engradados/img-5.jpg";
+import ProdutoImg from "../public/assets/engradados/image-eng.jpg";
 import ProdutoImg1 from "../public/assets/empresa-13.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
@@ -34,6 +35,11 @@ const slides = [
     id: 4,
     src: primg4,
     alt: "Image 4",
+  },
+  {
+    id: 5,
+    src: primg5,
+    alt: "Image 5",
   },
 ];
 
@@ -110,7 +116,7 @@ function Pallets() {
 
       <div className="p-5">
         <div
-          className="max-w-full h-[600px] md:h-[500px] md:w-[1000px] m-auto relative group -mt-40"
+          className="max-w-full h-[400px] md:h-[500px] md:w-[800px] m-auto relative group -mt-40"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -188,7 +194,7 @@ function Pallets() {
             <ul className="list-disc">
               <li className="p-4">Pallets de Madeira</li>
               <li className="p-4"> Origem da Madeira</li>
-              <li className="p-4">Pallets Inteligentes</li>
+              <li className="p-4">Pallets Fumigados</li>
               <li className="p-4">
                 Conformidade com Padrões de Qualidade e Segurança
               </li>

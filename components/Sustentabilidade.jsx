@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import ProdutoImg from "../public/assets/empresa-12.jpg";
+import ProdutoImg from "../public/assets/sustentabilidade.jpeg";
 import Link from "next/link";
 import Contact from "./Contact";
 import Cert11 from "../public/assets/cetifications/logo-22.png";

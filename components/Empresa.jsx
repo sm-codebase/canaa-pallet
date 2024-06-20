@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProdutoImg from "../public/assets/empresa-34.jpg";
+import ProdutoImg from "../public/assets/quemsomos.jpg";
 import ProdutoImg1 from "../public/assets/empresa-33.jpg";
 import ProdutoImg2 from "../public/assets/empresa-22.jpg";
 import ProdutoImg3 from "../public/assets/empresa-23.jpg";
@@ -58,7 +58,7 @@ const Empresa = () => {
 
   return (
     <div id="Empresa" className="   ">
-      <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group">
+      <div className="max-w-full h-[100px] md:h-[300px] w-full m-auto relative group">
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
             className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -148,7 +148,7 @@ const Empresa = () => {
       </div>
 
       <div className="md:grid grid-cols-3 mt-10">
-        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto ">
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto hidden">
           <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
             <Image
               className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -175,7 +175,7 @@ const Empresa = () => {
           </div>
         </div>
 
-        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group ">
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group hidden">
           <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
             <Image
               className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -202,7 +202,7 @@ const Empresa = () => {
           </div>
         </div>
 
-        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group ">
+        <div className="max-w-full h-[240px] md:h-[400px] w-full m-auto relative group hidden">
           <div className="w-full h-full bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
             <Image
               className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"

@@ -4,7 +4,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import primg1 from "../public/assets/carousel/pr-img-1.jpg";
 import primg2 from "../public/assets/carousel/pr-img-2.jpg";
 import primg3 from "../public/assets/carousel/pr-img-3.jpg";
-import primg4 from "../public/assets/carousel/pr-img-4.jpg";
+
 import Link from "next/link";
 import logo1 from "../public/assets/logo-white.png";
 
@@ -34,13 +34,7 @@ const slides = [
     summary: defaultSummary,
     description: defaultDescription,
   },
-  {
-    id: 4,
-    src: primg4,
-    alt: "Image 4",
-    summary: defaultSummary,
-    description: defaultDescription,
-  },
+  
 ];
 
 function Carousel() {

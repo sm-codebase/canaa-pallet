@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import primg1 from "../public/assets/carousel/image-1.jpg";
-import primg2 from "../public/assets/carousel/image-2.jpg";
-import primg3 from "../public/assets/carousel/image-3.jpg";
-import primg4 from "../public/assets/carousel/image-4.jpg";
-import ProdutoImg from "../public/assets/carousel/image-3.jpg";
+import primg1 from "../public/assets/pallets/image-1.jpg";
+import primg2 from "../public/assets/pallets/image-2.jpg";
+import primg3 from "../public/assets/pallets/image-3.jpg";
+import primg4 from "../public/assets/pallets/image-4.jpg";
+import ProdutoImg from "../public/assets/pallets/image-pal.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
 import Logo from "../public/assets/logo.png";
@@ -109,7 +109,7 @@ function Pallets() {
 
       <div className="p-5">
         <div
-          className="max-w-full h-[600px] md:h-[500px] md:w-[1000px] m-auto relative group -mt-40"
+          className="max-w-full h-[600px] md:h-[500px] md:w-[500px] m-auto relative group -mt-40"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
