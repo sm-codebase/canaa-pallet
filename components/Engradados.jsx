@@ -8,6 +8,7 @@ import primg4 from "../public/assets/engradados/img-4.jpg";
 import primg5 from "../public/assets/engradados/img-5.jpg";
 import ProdutoImg from "../public/assets/engradados/image-eng.jpg";
 import ProdutoImg1 from "../public/assets/empresa-13.jpg";
+import Tratamento from "../public/assets/engradados/tratamento.jpg";
 import Link from "next/link";
 import Contact from "./Contact";
 import Logo from "../public/assets/logo.png";
@@ -50,6 +51,16 @@ const images = [
     alt: "Image 1",
     summary: "Engradados e caixas",
     description: "",
+  },
+
+  {
+    id: 2,
+    src: Tratamento,
+    alt: "Image 1",
+    summary: "Tratamento fitossanitário",
+    description:
+      "O que é? O tratamento fitossanitário de pallets é um conjunto de práticas para prevenir, controlar e erradicar pragas e doenças na madeira utilizada em pallets. Esse tratamento é essencial para garantir a segurança e a qualidade dos pallets, evitando a disseminação de pragas entre diferentes regiões e países.",
+    description2: "IMPORTÂNCIA! Proteção contra Pragas: Evita a proliferação de insetos e outros organismos que podem danificar a madeira. Conformidade Legal: Atende às normas internacionais, como a ISPM 15, permitindo o uso de pallets em exportações.Segurança e Qualidade: Garante que os pallets sejam seguros e duráveis para o transporte e armazenamento de mercadorias.",
   },
 ];
 
@@ -213,6 +224,33 @@ function Pallets() {
                 objectFit="cover"
                 priority // Add the priority property
               />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="max-w-full h-[400px] md:h-[800px] w-full m-auto">
+          <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
+            <Image
+              className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
+              src={Tratamento}
+              alt={"/"}
+              layout="fill"
+              objectFit="cover"
+            />
+
+            <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16  animate-fade-in drop-shadow-lg h-full w-full">
+              <div className="">
+                <h1 className="text-4xl  md:text-5xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
+                  {images[1].summary}
+                </h1>
+                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
+                  {images[1].description}
+                </p>
+                <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
+                  {images[1].description2}
+                </p>
+              </div>
             </div>
           </div>
         </div>

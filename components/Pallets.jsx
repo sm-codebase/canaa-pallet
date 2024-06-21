@@ -109,7 +109,7 @@ function Pallets() {
 
       <div className="p-5">
         <div
-          className="max-w-full h-[600px] md:h-[500px] md:w-[500px] m-auto relative group -mt-40"
+          className="max-w-full h-[600px] md:h-[500px] md:w-[800px] m-auto relative group -mt-40"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
