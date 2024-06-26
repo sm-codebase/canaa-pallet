@@ -13,9 +13,6 @@ import Link from "next/link";
 import Contact from "./Contact";
 import Logo from "../public/assets/logo.png";
 
-const defaultSummary = "Pallets";
-const defaultDescription = "";
-
 const slides = [
   {
     id: 1,
@@ -52,15 +49,14 @@ const images = [
     summary: "Engradados e caixas",
     description: "",
   },
-
   {
     id: 2,
     src: Tratamento,
-    alt: "Image 1",
-    summary: "Tratamento fitossanitário",
+    alt: "Image 2",
+    summary01: "Tratamento fitossanitário",
     description:
       "O que é? O tratamento fitossanitário de pallets é um conjunto de práticas para prevenir, controlar e erradicar pragas e doenças na madeira utilizada em pallets. Esse tratamento é essencial para garantir a segurança e a qualidade dos pallets, evitando a disseminação de pragas entre diferentes regiões e países.",
-    description2: "IMPORTÂNCIA! Proteção contra Pragas: Evita a proliferação de insetos e outros organismos que podem danificar a madeira. Conformidade Legal: Atende às normas internacionais, como a ISPM 15, permitindo o uso de pallets em exportações.Segurança e Qualidade: Garante que os pallets sejam seguros e duráveis para o transporte e armazenamento de mercadorias.",
+    description2: "IMPORTÂNCIA! Proteção contra Pragas: Evita a proliferação de insetos e outros organismos que podem danificar a madeira. Conformidade Legal: Atende às normas internacionais, como a ISPM 15, permitindo o uso de pallets em exportações. Segurança e Qualidade: Garante que os pallets sejam seguros e duráveis para o transporte e armazenamento de mercadorias.",
   },
 ];
 
@@ -88,7 +84,7 @@ function Pallets() {
     let intervalId;
 
     if (!isHovered) {
-      // Auto-scroll every 5 seconds (adjust the interval as needed)
+      // Auto-scroll every 10 seconds (adjust the interval as needed)
       intervalId = setInterval(() => {
         nextSlide();
       }, 10000);
@@ -106,7 +102,7 @@ function Pallets() {
           <Image
             className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
             src={ProdutoImg}
-            alt={"/"}
+            alt="/"
             layout="fill"
             objectFit="cover"
             priority // Add the priority property
@@ -115,10 +111,10 @@ function Pallets() {
           <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16  animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
               <h1 className="text-4xl  md:text-5xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
-                {images[currentIndex % images.length].summary}
+                {images[0].summary}
               </h1>
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
-                {images.description}
+                {images[0].description}
               </p>
             </div>
           </div>
@@ -219,7 +215,7 @@ function Pallets() {
               <Image
                 className="rounded-xl"
                 src={ProdutoImg1}
-                alt={"/"}
+                alt="/"
                 layout="fill"
                 objectFit="cover"
                 priority // Add the priority property
@@ -229,12 +225,12 @@ function Pallets() {
         </div>
       </div>
       <div>
-        <div className="max-w-full h-[400px] md:h-[800px] w-full m-auto">
+        <div className="max-w-full h-[700px] md:h-[800px] w-full m-auto">
           <div className="w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
             <Image
               className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
               src={Tratamento}
-              alt={"/"}
+              alt="/"
               layout="fill"
               objectFit="cover"
             />
@@ -242,7 +238,7 @@ function Pallets() {
             <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16  animate-fade-in drop-shadow-lg h-full w-full">
               <div className="">
                 <h1 className="text-4xl  md:text-5xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
-                  {images[1].summary}
+                  {images[1].summary01}
                 </h1>
                 <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
                   {images[1].description}
