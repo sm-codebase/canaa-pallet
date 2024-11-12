@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="maxx-w[1240px] m-auto p-5">
+    <div id="contact" className="maxx-w[1240px] m-auto p-5">
       <div className="flex md:flex-row flex-col-reverse justify-center  gap-10 text-left p-5">
         <div className="">
           <form
