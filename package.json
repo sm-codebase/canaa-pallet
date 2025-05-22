@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.2",
+    "@reach/menu-button": "^0.18.0",
     "@react-google-maps/api": "^2.17.1",
     "bootstrap": "^4.6.2",
     "google-map-react": "^2.2.0",
+    "hamburger-react": "^2.5.1",
     "next": "12.2.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",

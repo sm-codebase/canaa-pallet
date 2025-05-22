@@ -3,11 +3,14 @@ import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import primg1 from "../public/assets/carousel/pr-img-1.jpg";
 import primg2 from "../public/assets/carousel/pr-img-2.jpg";
-import Link from "next/link";
+import primg3 from "../public/assets/carousel/pr-img-3.jpg";
 
-const defaultSummary = "Bem-vindo ao Novo Capítulo Digital!";
+import Link from "next/link";
+import logo1 from "../public/assets/logo-white.png";
+
+const defaultSummary = "Sustentabilidade e qualidade:  ";
 const defaultDescription =
-  "Estamos empolgados em apresentar nosso novo site! Explore as inovações, descubra conteúdos exclusivos e mergulhe em uma experiência digital aprimorada.";
+  "Uma parceria inseparável e essencial Na nossa empresa, priorizamos a sustentabilidade e a qualidade em todos os nossos produtos. Fabricamos cuidadosamente nossas pallets e embalagens de madeira, garantindo que cada uma delas atenda aos mais altos padrões de responsabilidade ambiental. Com a certificação ISO, podemos assegurar não apenas a qualidade excepcional de nossos produtos, mas também o compromisso com práticas sustentáveis.";
 
 const slides = [
   {
@@ -22,10 +25,18 @@ const slides = [
   {
     id: 2,
     src: primg2,
-    alt: "Image 4",
+    alt: "Image 2",
     summary: defaultSummary,
     description: defaultDescription,
   },
+  {
+    id: 3,
+    src: primg3,
+    alt: "Image 3",
+    summary: defaultSummary,
+    description: defaultDescription,
+  },
+  
 ];
 
 function Carousel() {
@@ -55,7 +66,7 @@ function Carousel() {
       // Auto-scroll every 5 seconds (adjust the interval as needed)
       intervalId = setInterval(() => {
         nextSlide();
-      }, 10000);
+      }, 5000);
     }
 
     return () => {
@@ -64,7 +75,7 @@ function Carousel() {
   }, [isHovered, currentIndex]);
 
   return (
-    <div className="relative">
+    <div id="carousel" className="relative">
       <div
         className="max-w-full h-[920px] md:h-[900px] w-full m-auto relative group"
         onMouseEnter={() => setIsHovered(true)}
@@ -72,7 +83,7 @@ function Carousel() {
       >
         <div className="w-full h-full mt-24 bg-center bg-cover duration-500 relative transition-opacity bg-gradient-to-r from-black to-gray-900">
           <Image
-            className="rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-30"
+            className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
             src={slides[currentIndex].src}
             alt={`Slide ${slides[currentIndex].id}`}
             layout="fill"
@@ -80,7 +91,7 @@ function Carousel() {
             priority // Add the priority property
           />
 
-          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16    animate-fade-in drop-shadow-lg h-full w-full">
+          <div className="absolute p-5 md:grid grid-cols-3 md:p-20 mt-16 animate-fade-in drop-shadow-lg h-full w-full">
             <div className="">
               <h1 className="text-3xl  md:text-4xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-green-400 to-green-500 drop-shadow-2xl">
                 {slides[currentIndex].summary}
@@ -88,10 +99,10 @@ function Carousel() {
               <p className="text-white py-4 text-base font-medium font-mono md:leading-8">
                 {slides[currentIndex].description}
               </p>
-              <li className="grid justify-items-start">
-                <Link href="/#missao">
-                  <button className="md:w-1/2 w-full h-[40px] rounded-full mt-10 ">
-                    Em Breve
+              <li className="grid justify-items-start pt-4">
+                <Link href="/#valores">
+                  <button className="md:w-1/2 w-full h-[40px] rounded-full">
+                    Saiba mais
                   </button>
                 </Link>
               </li>

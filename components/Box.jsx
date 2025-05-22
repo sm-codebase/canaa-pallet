@@ -1,35 +1,34 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../public/assets/carousel/logo.png";
+import Logo from "../public/white-logo.svg";
 
 const Box = () => {
   return (
     <div className="">
       <div
         style={{ borderRadius: "60px" }}
-        className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white  md:w-[1250px] md:h-[550px]  mx-auto relative  -mt-40"
+        className="bg-gradient-to-r from-[#048f1a] to-[#64ac6d] text-white  md:w-[1250px] md:h-[550px]   mx-auto relative  -mt-40"
       >
         <div className="grid justify-center p-10 mt-10 ">
-          <Image src={Logo} alt="logo-branco" height={38.5} width={120} />
+          <Image src={Logo} alt="logo-branco" height={100} width={120} />
         </div>
 
-        <div className="grid text-center p-10 font-sans font-semibold text-lg leading-loose">
+        <div className="grid text-center p-10 font-sans font-medium text-lg leading-loose">
           <p>
-            A Ripack possui nas suas unidades industriais uma estrutura moderna,
-            com mais de 20.000m2 de área fabril, equipamentos automatizados, com
-            fluxo de processos nos moldes da manufatura enxuta. Com um ambiente
-            saudável, limpo, organizado, a empresa proporciona aos seus
-            colaboradores conforto e segurança nas suas operações, atingindo
-            altos níveis de produtividade.
+            Há quase duas décadas no mercado a <b>Canaã Pallets</b> é uma
+            empresa especializada na fabricação de pallets e embalagens de
+            madeira. Desde o seu início, a empresa tem se destacado não apenas
+            pela qualidade de seus produtos, mas também por seu compromisso com
+            a ética e sustentabilidade.
           </p>
           <p className="mt-8">
             {" "}
-            Nossos reflorestamentos próprios permitem abastecimento continuo de
-            nossas matérias primas em qualquer época do ano, e são certificados
-            com rígidos processos de controle, incluindo o certificado FSC. Tudo
-            isso com o compromisso de manter o equilíbrio do meio ambiente,
-            protegendo matas nativas, nascentes e cuidando com responsabilidade
-            da fauna e da flora.
+            Em franco crescimento, a Canaã Pallets conta com um amplo espaço
+            fabril e se destaca no mercado por oferecer soluções personalizadas.
+            A empresa trabalha em estreita colaboração com seus clientes, para
+            fornecer produtos que atendam perfeitamente às exigências
+            específicas de cada negócio, garantindo eficiência, qualidade e
+            satisfação em cada entrega.
           </p>
         </div>
       </div>
