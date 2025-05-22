@@ -31,7 +31,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed h-[95px] left-0 top-0 w-full z-10 ease-in duration-300"
     >
-      <div className="max-w-[1240px] mx-auto flex justify-between items-center p-4 text-white">
+      <div className="max-w-[1240px] mx-auto flex justify-between items-center p-4 text-black">
         <Link href="/">
           <a>
             <Image
@@ -47,8 +47,7 @@ const Navbar = () => {
         <p className="text-black hidden sm:block">
           Nosso produto é a base para os seus negócios
         </p>
-        
-        {/* Botão de menu hamburger */}
+
         <div onClick={handleNav} className="block z-10">
           <Hamburger color="gray" toggled={nav} toggle={setNav} />
         </div>
@@ -62,7 +61,6 @@ const Navbar = () => {
           }
         >
           <div className="w-full max-w-md text-white text-2xl space-y-8">
-            {/* Seção Canaã */}
             <div className="text-center">
               <h1 className="text-3xl font-semibold mb-4 border-b-2 border-white inline-block pb-2">
                 Canaã
@@ -83,7 +81,6 @@ const Navbar = () => {
               </ul>
             </div>
 
-            {/* Seção Produtos */}
             <div className="text-center">
               <h1 className="text-3xl font-semibold mb-4 border-b-2 border-white inline-block pb-2">
                 Produtos
