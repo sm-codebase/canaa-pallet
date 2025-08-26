@@ -15,7 +15,7 @@ const Whatsapp = () => {
         accountName="Canaa Pallets"
         chatMessage="Olá, tudo bem? Como posso ajudar?"
         statusMessage="Atendendo..."
-        phoneNumber="55 19 98933-1908"
+        phoneNumber="55 19 9988-5555"
         allowClickAway={true}
         onClick={HandleClick}
       />
