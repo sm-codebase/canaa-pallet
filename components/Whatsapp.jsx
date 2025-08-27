@@ -21,7 +21,7 @@ export default function Whatsapp() {
       accountName="Canaa Pallets"
       chatMessage="Olá, tudo bem? Como posso ajudar?"
       statusMessage="Atendendo..."
-      phoneNumber="551999885555" // só dígitos
+      phoneNumber="5519971593235" 
       allowClickAway={true}
       onClick={handleClick}
     />
